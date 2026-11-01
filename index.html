@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Dùng AI Làm Dự Án - Real World Lab Khối 9</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        ahs: {
+                            blue: '#0267B1',         // Xanh dương Á Châu chuẩn Logo
+                            darkblue: '#1A5493',     // Xanh đậm Á Châu
+                            navy: '#0C3860',         // Xanh navy đậm
+                            ice: '#F0F7FD',          // Nền xanh trắng sáng
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f0f7fd; }
+        ::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #60a5fa; }
+    </style>
+</head>
+<body class="bg-[#F0F7FD] text-slate-900 min-h-screen flex flex-col font-sans antialiased text-[16px] leading-relaxed">
+
+    <!-- Top Status Bar: Nhận diện Á Châu Trắng - Xanh -->
+    <div class="w-full bg-[#1A5493] text-blue-100 text-xs sm:text-sm py-2 px-6 lg:px-12 flex justify-between items-center border-b border-blue-400/20 font-medium">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-school text-sky-300"></i>
+            <span>TRƯỜNG QUỐC TẾ Á CHÂU • TỔ BỘ MÔN TIN HỌC</span>
+        </div>
+        <div class="flex items-center gap-2 text-sky-200">
+            <i class="fa-solid fa-house-laptop"></i>
+            <span>Tài Liệu Hướng Dẫn Học Sinh Tự Học & Làm Bài Tại Nhà</span>
+        </div>
+    </div>
+
+    <!-- Header Tràn Viền Full Màn Hình -->
+    <header class="w-full bg-[#0267B1] text-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+                <div class="bg-white p-2 rounded-xl shadow flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo_asian_school.png" alt="Logo Trường Quốc Tế Á Châu" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/0267B1/FFFFFF?text=ASIAN+SCHOOL';">
+                </div>
+                <div>
+                    <span class="bg-white text-[#0267B1] text-xs px-2.5 py-0.5 rounded font-extrabold uppercase tracking-wider shadow-sm">Real World Lab Khối 9</span>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1">
+                        Hướng Dẫn Dùng AI Hoàn Thành Project Brief & Bộ Nhận Diện
+                    </h1>
+                </div>
+            </div>
+            <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium">
+                <i class="fa-solid fa-wand-magic-sparkles text-amber-300 mr-1.5"></i>Áp dụng cho <b>ChatGPT</b> hoặc <b>Gemini</b>
+            </div>
+        </div>
+    </header>
+
+    <!-- FULL-WIDTH CONTENT: 3 BƯỚC KHÉP KÍN QUY TRÌNH -->
+    <main class="w-full px-6 lg:px-12 py-8 flex-grow space-y-12">
+
+        <!-- ==================== BƯỚC 1 ==================== -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-6">
+            
+            <!-- Tiêu đề Bước 1 -->
+            <div class="border-b border-blue-100 pb-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-xl shadow-sm">1</span>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-[#0267B1]">Khởi Đầu Dự Án</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0C3860]">
+                            Bước 1: Dùng AI Để Gợi Ý & Chọn Vấn Đề Thực Tế
+                        </h2>
+                    </div>
+                </div>
+                <p class="text-slate-600 text-base mt-3 pl-1 sm:pl-13">
+                    Các em sao chép câu lệnh mẫu bên dưới, dán vào <b>ChatGPT</b> hoặc <b>Gemini</b>. Nhóm có thể thay đổi phần trong ngoặc vuông <code class="text-[#0267B1] font-bold bg-blue-50 px-2 py-0.5 rounded">[Sức khỏe số]</code> thành chủ đề lớn của nhóm mình.
+                </p>
+            </div>
+
+            <!-- Khối Copy Prompt 1 -->
+            <div class="bg-[#0C3860] text-white p-5 sm:p-6 rounded-2xl shadow-md border border-blue-400/20 space-y-3">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-300 flex items-center gap-2">
+                        <i class="fa-solid fa-terminal text-sky-400"></i> Mẫu câu lệnh Prompt 1 (Bấm nút để copy):
+                    </span>
+                    <button onclick="copyText('prompt-1')" class="bg-[#0267B1] hover:bg-[#1A5493] text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow border border-white/20 flex items-center gap-2">
+                        <i class="fa-regular fa-copy"></i> Sao chép Prompt 1
+                    </button>
+                </div>
+                <div id="prompt-1" class="bg-[#08233C] p-4 rounded-xl font-mono text-sm sm:text-base text-sky-100 border border-blue-400/20 leading-relaxed selection:bg-[#0267B1]">Tôi là học sinh lớp 9. Nhóm tôi cần làm một dự án truyền thông số (Real World Lab) về chủ đề Sức khỏe số. Hãy gợi ý 3 vấn đề cụ thể, gần gũi với lứa tuổi 14-15. Với mỗi vấn đề, hãy nêu rõ: 1) Tên vấn đề, 2) Tại sao nó lại quan trọng với học sinh, 3) Gợi ý 1 ý tưởng sản phẩm (Video/Podcast) để giải quyết vấn đề đó.</div>
+            </div>
+
+            <!-- Khung 3 Ảnh Chụp Màn Hình Kết Quả Thực Tế Đầy Đủ Của Prompt 1 -->
+            <div class="space-y-4 pt-2">
+                <div class="flex items-center gap-2 text-[#0C3860] font-extrabold text-lg">
+                    <i class="fa-solid fa-images text-[#0267B1]"></i>
+                    <span>Toàn bộ kết quả thực tế từ ChatGPT (3 ảnh chụp màn hình theo trình tự):</span>
+                </div>
+
+                <!-- Ảnh 1: Toàn cảnh câu hỏi & Vấn đề 1, 2 -->
+                <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                    <div class="w-full flex justify-between items-center px-1">
+                        <span class="text-xs sm:text-sm font-bold text-sky-300 uppercase tracking-wider">
+                            1.1. CÂU HỎI & VẤN ĐỀ 1: LƯỚT TIKTOK, CHƠI GAME TRƯỚC KHI NGỦ
+                        </span>
+                        <span class="text-xs text-slate-400 italic">Tổng quan</span>
+                    </div>
+                    <img src="assets/p1_01_overview.png" alt="Ảnh chụp tổng quan và vấn đề 1 từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/1200x700/08233C/FFFFFF?text=Anh+1.1+Tong+Quan+Va+Van+De+1';">
+                </div>
+
+                <!-- Grid 2 Cột: Ảnh 2 (Vấn đề 2 & 3) và Ảnh 3 (Bảng tiêu chí) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Ảnh 2: Vấn đề 2 & 3 -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs sm:text-sm font-bold text-teal-300 uppercase tracking-wider">
+                                1.2. VẤN ĐỀ 2 (ÁP LỰC SO SÁNH) & VẤN ĐỀ 3 (MẤT TẬP TRUNG)
+                            </span>
+                        </div>
+                        <img src="assets/p1_02_issues_2_3.png" alt="Ảnh chụp vấn đề 2 và 3 từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/800x900/08233C/FFFFFF?text=Anh+1.2+Van+De+2+Va+3';">
+                    </div>
+
+                    <!-- Ảnh 3: Bảng tiêu chí chọn lựa -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs sm:text-sm font-bold text-amber-300 uppercase tracking-wider">
+                                1.3. BẢNG TIÊU CHÍ SO SÁNH & ĐỀ XUẤT LỰA CHỌN
+                            </span>
+                        </div>
+                        <img src="assets/p1_03_criteria_table.png" alt="Ảnh chụp bảng tiêu chí lựa chọn từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/800x600/08233C/FFFFFF?text=Anh+1.3+Bang+Tieu+Chi';">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ==================== BƯỚC 2 ==================== -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-6">
+            
+            <!-- Tiêu đề Bước 2 -->
+            <div class="border-b border-blue-100 pb-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-xl shadow-sm">2</span>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-[#0267B1]">Nhận Diện Thương Hiệu</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0C3860]">
+                            Bước 2: Dùng AI Để Xây Dựng Bộ Nhận Diện (Mini Brand & Logo Canva)
+                        </h2>
+                    </div>
+                </div>
+                <p class="text-slate-600 text-base mt-3 pl-1 sm:pl-13">
+                    Sau khi nhóm đã chốt được vấn đề (Ví dụ: <i>Áp lực FOMO trên mạng xã hội</i>), các em sao chép câu lệnh này để AI đóng vai chuyên gia thiết kế giúp: <b>Tên dự án, Bảng màu (mã HEX), Slogan và ý tưởng Logo tự vẽ trên Canva</b>.
+                </p>
+            </div>
+
+            <!-- Khối Copy Prompt 2 -->
+            <div class="bg-[#0C3860] text-white p-5 sm:p-6 rounded-2xl shadow-md border border-blue-400/20 space-y-3">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-sky-300 flex items-center gap-2">
+                        <i class="fa-solid fa-terminal text-sky-400"></i> Mẫu câu lệnh Prompt 2 (Bấm nút để copy):
+                    </span>
+                    <button onclick="copyText('prompt-2')" class="bg-[#0267B1] hover:bg-[#1A5493] text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition shadow border border-white/20 flex items-center gap-2">
+                        <i class="fa-regular fa-copy"></i> Sao chép Prompt 2
+                    </button>
+                </div>
+                <div id="prompt-2" class="bg-[#08233C] p-4 rounded-xl font-mono text-sm sm:text-base text-sky-100 border border-blue-400/20 leading-relaxed selection:bg-[#0267B1]">Nhóm tôi làm dự án truyền thông số về 'Áp lực FOMO trên mạng xã hội ở học sinh'. Hãy đóng vai một chuyên gia Branding, thiết kế giúp tôi một Mini Brand Identity bao gồm: 1) 3 lựa chọn Tên dự án (ngắn gọn, ấn tượng), 2) Bảng màu chủ đạo (Kèm mã HEX và ý nghĩa màu sắc), 3) 1 Slogan (dưới 10 chữ), 4) Gợi ý ý tưởng thiết kế Logo đơn giản có thể tự làm trên Canva.</div>
+            </div>
+
+            <!-- Khung 4 Ảnh Chụp Màn Hình Kết Quả Đầy Đủ Của Prompt 2 -->
+            <div class="space-y-4 pt-2">
+                <div class="flex items-center gap-2 text-[#0C3860] font-extrabold text-lg">
+                    <i class="fa-solid fa-images text-[#0267B1]"></i>
+                    <span>Toàn bộ kết quả thực tế từ ChatGPT (4 ảnh chụp màn hình theo trình tự):</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <!-- Ảnh 4: 3 Lựa chọn tên dự án (JOMO) -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs font-bold text-sky-300 uppercase tracking-wider">
+                                2.1. TÊN DỰ ÁN (JOMO)
+                            </span>
+                        </div>
+                        <img src="assets/p2_01_project_names.png" alt="Ảnh chụp 3 lựa chọn tên dự án từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/600x800/08233C/FFFFFF?text=Anh+2.1+Ten+Du+An';">
+                    </div>
+
+                    <!-- Ảnh 5: Bảng màu thương hiệu HEX -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs font-bold text-teal-300 uppercase tracking-wider">
+                                2.2. BẢNG MÀU THƯƠNG HIỆU
+                            </span>
+                        </div>
+                        <img src="assets/p2_02_color_palette.png" alt="Ảnh chụp bảng màu từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/600x800/08233C/FFFFFF?text=Anh+2.2+Bang+Mau';">
+                    </div>
+
+                    <!-- Ảnh 6: Slogan & Mẫu Logo -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">
+                                2.3. SLOGAN & MẪU LOGO
+                            </span>
+                        </div>
+                        <img src="assets/p2_03_slogan_logo.png" alt="Ảnh chụp Slogan và Mẫu Logo từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/600x800/08233C/FFFFFF?text=Anh+2.3+Slogan+Logo';">
+                    </div>
+
+                    <!-- Ảnh 7: Hướng dẫn Canva & Demo Poster/Podcast -->
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 shadow-md space-y-2 flex flex-col items-center">
+                        <div class="w-full flex justify-between items-center px-1">
+                            <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider">
+                                2.4. VẼ CANVA & ỨNG DỤNG
+                            </span>
+                        </div>
+                        <img src="assets/p2_04_canva_and_showcase.png" alt="Ảnh chụp hướng dẫn Canva và demo sản phẩm từ ChatGPT" class="w-full h-auto rounded-xl object-contain shadow" onerror="this.onerror=null; this.src='https://placehold.co/600x800/08233C/FFFFFF?text=Anh+2.4+Canva+Ung+Dung';">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ==================== BƯỚC 3 (MỚI BỔ SUNG): TỔNG HỢP VÀO PROJECT BRIEF ==================== -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-6">
+            
+            <!-- Tiêu đề Bước 3 -->
+            <div class="border-b border-blue-100 pb-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-xl shadow-sm">3</span>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Hoàn Tất Mục Tiêu & Nộp Bài</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0C3860]">
+                            Bước 3: Ráp Kết Quả AI Vào Bản Project Brief Nhóm
+                        </h2>
+                    </div>
+                </div>
+                <p class="text-slate-600 text-base mt-3 pl-1 sm:pl-13">
+                    Đừng để kết quả của AI nằm rải rác trên màn hình! Các em hãy gom các thông tin vừa tạo ở Bước 1 và Bước 2 để điền vào đúng <b>5 mục của bản Project Brief</b> theo bảng hướng dẫn đối chiếu bên dưới:
+                </p>
+            </div>
+
+            <!-- Bảng đối chiếu nhanh: Lấy từ đâu -> Điền vào đâu -->
+            <div class="overflow-x-auto bg-[#F0F7FD] p-5 rounded-2xl border border-blue-200">
+                <table class="w-full text-left text-sm sm:text-base border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-blue-300 text-[#0C3860]">
+                            <th class="py-3 px-4 font-extrabold uppercase tracking-wider text-xs sm:text-sm">Mục Trong Project Brief</th>
+                            <th class="py-3 px-4 font-extrabold uppercase tracking-wider text-xs sm:text-sm">Lấy Từ Đâu Ra?</th>
+                            <th class="py-3 px-4 font-extrabold uppercase tracking-wider text-xs sm:text-sm text-emerald-700">Ví Dụ Mẫu Nhóm JOMO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-blue-200/70 text-slate-800">
+                        <tr class="hover:bg-white/60 transition">
+                            <td class="py-3.5 px-4 font-bold text-[#0267B1]">1. Tên dự án / Tên Agency</td>
+                            <td class="py-3.5 px-4"><span class="bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded text-xs font-bold">Kết quả Prompt 2</span> (Mục 1)</td>
+                            <td class="py-3.5 px-4 font-semibold text-emerald-800">JOMO – Vui khi bỏ lỡ (Joy of Missing Out)</td>
+                        </tr>
+                        <tr class="hover:bg-white/60 transition">
+                            <td class="py-3.5 px-4 font-bold text-[#0267B1]">2. Vấn đề thực tiễn (Issue)</td>
+                            <td class="py-3.5 px-4"><span class="bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded text-xs font-bold">Kết quả Prompt 1</span> (Chọn 1 trong 3 vấn đề)</td>
+                            <td class="py-3.5 px-4 font-semibold text-emerald-800">Áp lực so sánh bản thân & hội chứng FOMO trên mạng xã hội</td>
+                        </tr>
+                        <tr class="hover:bg-white/60 transition">
+                            <td class="py-3.5 px-4 font-bold text-[#0267B1]">3. Khán giả mục tiêu (Audience)</td>
+                            <td class="py-3.5 px-4"><span class="bg-slate-200 text-slate-700 px-2 py-0.5 rounded text-xs font-bold">Buổi định hướng</span></td>
+                            <td class="py-3.5 px-4 font-semibold text-emerald-800">Học sinh THCS (14–15 tuổi) tại TP.HCM</td>
+                        </tr>
+                        <tr class="hover:bg-white/60 transition">
+                            <td class="py-3.5 px-4 font-bold text-[#0267B1]">4. Slogan cốt lõi (Core Message)</td>
+                            <td class="py-3.5 px-4"><span class="bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded text-xs font-bold">Kết quả Prompt 2</span> (Mục 3)</td>
+                            <td class="py-3.5 px-4 font-black text-amber-700 italic">"Bỏ lỡ mạng, không lỡ đời!"</td>
+                        </tr>
+                        <tr class="hover:bg-white/60 transition">
+                            <td class="py-3.5 px-4 font-bold text-[#0267B1]">5. Bộ nhận diện Mini Brand</td>
+                            <td class="py-3.5 px-4"><span class="bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded text-xs font-bold">Kết quả Prompt 2</span> (Mã HEX) + <span class="bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs font-bold">Canva</span></td>
+                            <td class="py-3.5 px-4 font-mono text-xs sm:text-sm text-slate-700">Mã màu: #168C84, #FAF8F5, #FFB77C + File ảnh Logo PNG</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Checklist 2 sản phẩm nộp bài: File Word & File Logo -->
+            <div class="bg-emerald-50 border-2 border-emerald-400 p-5 rounded-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="space-y-1">
+                    <span class="text-xs font-black uppercase tracking-wider text-emerald-800 bg-emerald-200/70 px-2.5 py-0.5 rounded">Checklist Hoàn Thành</span>
+                    <h4 class="text-base sm:text-lg font-extrabold text-emerald-950">Hai Sản Phẩm Bắt Buộc Nhóm Cần Nộp Cho Giáo Viên:</h4>
+                    <ul class="text-xs sm:text-sm text-emerald-900 list-disc list-inside space-y-1.5 font-medium">
+                        <li><b>01 File Word (.docx):</b> Soạn thảo Project Brief của nhóm theo đúng 5 mục trong bảng đối chiếu ở trên và nộp file.</li>
+                        <li><b>01 File ảnh Logo PNG:</b> Tải xuống từ Canva với định dạng PNG nền trong suốt.</li>
+                    </ul>
+                </div>
+                <div class="bg-white px-5 py-3 rounded-xl border border-emerald-300 text-center shadow-sm flex-shrink-0 self-stretch md:self-auto flex md:flex-col justify-center items-center gap-1">
+                    <i class="fa-solid fa-file-arrow-up text-emerald-600 text-2xl"></i>
+                    <span class="text-xs font-bold text-emerald-900">Nộp File Word & Logo</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ==================== LƯU Ý BẮT BUỘC ==================== -->
+        <section class="w-full bg-[#0C3860] text-white p-6 sm:p-8 rounded-2xl shadow-lg border border-blue-400/30 space-y-4">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-shield-halved text-amber-400 text-2xl sm:text-3xl"></i>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white">
+                    Lưu Ý Quan Trọng: Nhất Quán Thương Hiệu Trong Cả 4 Sản Phẩm
+                </h3>
+            </div>
+            
+            <p class="text-sm sm:text-base text-blue-100 leading-relaxed">
+                Sau khi có <b>Tên dự án (JOMO)</b>, <b>Slogan ("Bỏ lỡ mạng, không lỡ đời!")</b>, <b>Bảng màu</b> và <b>Logo</b>, nhóm của các em bắt buộc phải sử dụng đồng bộ nhận diện này cho <b>toàn bộ 4 sản phẩm</b> trong năm học:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10 space-y-1">
+                    <span class="text-sm font-bold text-sky-300 block">🎙️ 1. Kênh Podcast</span>
+                    <span class="text-xs text-blue-100">Ảnh bìa tập (Cover Art) có Logo và đúng mã màu nhóm.</span>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10 space-y-1">
+                    <span class="text-sm font-bold text-emerald-300 block">🎬 2. Video 60 Giây</span>
+                    <span class="text-xs text-blue-100">Đoạn Intro/Outro xuất hiện Logo và Slogan của dự án.</span>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10 space-y-1">
+                    <span class="text-sm font-bold text-sky-200 block">🌐 3. Website Dự Án</span>
+                    <span class="text-xs text-blue-100">Giao diện, nút bấm dùng đúng màu thương hiệu nhóm đã chọn.</span>
+                </div>
+                <div class="bg-white/10 p-4 rounded-xl border border-white/10 space-y-1">
+                    <span class="text-sm font-bold text-amber-300 block">📢 4. Poster Chiến Dịch</span>
+                    <span class="text-xs text-blue-100">Ấn phẩm tổng thể thể hiện rõ nét thông điệp và Logo nhóm.</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Tràn Viền Tối Giản Trắng - Xanh -->
+    <footer class="w-full bg-white border-t border-blue-100 py-5 mt-auto">
+        <div class="w-full px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate-600 font-medium">
+            <div>
+                © 2026–2027 <b>Trường Quốc tế Á Châu (The Asian International School)</b> • Chương Trình Real World Lab Khối 9
+            </div>
+            <div class="flex items-center gap-4 text-slate-500">
+                <span><i class="fa-solid fa-check text-emerald-500 mr-1"></i>Trực quan 100%</span>
+                <span><i class="fa-solid fa-check text-emerald-500 mr-1"></i>Đủ 7 ảnh gốc</span>
+                <span><i class="fa-solid fa-check text-emerald-500 mr-1"></i>Nộp bài đúng chuẩn</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT COPY ĐƠN GIẢN -->
+    <script>
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText.trim();
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("Đã sao chép câu lệnh Prompt! Các em hãy dán vào ChatGPT hoặc Gemini nhé.");
+                });
+            } else {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert("Đã sao chép câu lệnh Prompt!");
+            }
+        }
+    </script>
+</body>
+</html>
