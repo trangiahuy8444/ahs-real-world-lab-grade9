@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi" class="w-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 2: Dựng Video 60 Giây Online Trên iPad | Real World Lab Khối 9</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, kbd, pre { font-family: 'JetBrains Mono', monospace; }
+        .touch-action-manipulation { touch-action: manipulation; }
+    </style>
+</head>
+<body class="w-full min-h-screen bg-[#F0F7FD] text-slate-800 antialiased flex flex-col m-0 p-0">
+
+    <!-- Header Tràn Viền Chuẩn Á Châu -->
+    <header class="w-full bg-[#0267B1] text-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+                <div class="bg-white p-2 rounded-xl shadow flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo_asian_school.png" alt="Logo Trường Quốc Tế Á Châu" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/0267B1/FFFFFF?text=ASIAN+SCHOOL';">
+                </div>
+                <div>
+                    <span class="bg-white text-[#0267B1] text-xs px-2.5 py-0.5 rounded font-extrabold uppercase tracking-wider shadow-sm">Real World Lab Khối 9 • Buổi 2</span>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1">
+                        Hướng Dẫn Dựng Video 60 Giây Online Bằng iPad
+                    </h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Về Cổng Lộ Trình
+                </a>
+                <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium flex items-center gap-2">
+                    <i class="fa-brands fa-apple text-sky-200"></i>
+                    <span>Tối Ưu 100% Cho iPad (Web Online)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full px-6 lg:px-12 py-8 flex-grow space-y-10">
+
+        <!-- Banner Thử Thách Của Buổi Học -->
+        <section class="w-full bg-gradient-to-r from-[#0C3860] via-[#1A5493] to-[#0267B1] text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-3">
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-amber-400 text-slate-900 rounded-full text-xs font-black uppercase tracking-wider">Thử Thách Của Buổi Học</span>
+                <span class="text-xs text-sky-200">Buổi 2: Video 60s (Tháng 11/2026)</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black">
+                "Bạn chỉ có 60 giây. Làm thế nào để khiến người xem quan tâm và ghi nhớ thông điệp số của nhóm?"
+            </h2>
+            <div class="text-xs sm:text-sm text-blue-100 leading-relaxed pt-1">
+                <b>Nguyên tắc kỹ thuật:</b> Dựng video dọc (9:16) hoặc ngang (16:9) hoàn toàn trên trình duyệt Safari iPad bằng Canva Video Web.<br>
+                <b>Yêu cầu sản phẩm nộp:</b> 01 video ngắn (định dạng <code>.mp4</code>, độ dài 45–60 giây, chất lượng Full HD 1080p hoặc 720p).
+            </div>
+        </section>
+
+        <!-- PHẦN 1: BỘ CÔNG CỤ DỰNG VIDEO ONLINE TRÊN IPAD -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-4">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">1</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-toolbox text-[#0267B1]"></i> Công Cụ Online Sử Dụng Trực Tiếp Trên iPad
+                    </h3>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm my-3">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead class="bg-[#0C3860] text-white">
+                        <tr>
+                            <th class="p-3 font-bold">Công Cụ Online</th>
+                            <th class="p-3 font-bold">Địa Chỉ Truy Cập (Safari iPad)</th>
+                            <th class="p-3 font-bold">Mục Đích Thao Tác Kỹ Thuật</th>
+                            <th class="p-3 font-bold">Lợi Thế Khi Dùng Trên iPad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-clapperboard text-rose-500 mr-2"></i>Canva Video Web
+                            </td>
+                            <td class="p-3 font-mono text-xs text-blue-700">
+                                <a href="https://www.canva.com" target="_blank" class="hover:underline">canva.com</a>
+                            </td>
+                            <td class="p-3">Dựng video dọc (TikTok/Reels 9:16), cắt ghép timeline, chèn chữ phụ đề tiếng Anh, chèn nhạc nền.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Chạy mượt trên Safari iPad, kéo thả cảm ứng, không cần cài đặt phần mềm.</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-camera text-sky-500 mr-2"></i>Camera iPad & Photos
+                            </td>
+                            <td class="p-3 font-mono text-xs text-slate-600">Ứng dụng có sẵn trên iPadOS</td>
+                            <td class="p-3">Quay clip phỏng vấn học sinh, cảnh thực tế trong khuôn viên trường hoặc tự quay trước gương/góc học tập.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Camera chất lượng cao, đồng bộ thẳng vào thư viện để tải lên Canva trong 1 chạm.</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-folder-open text-amber-500 mr-2"></i>Tệp (Files iPad)
+                            </td>
+                            <td class="p-3 font-mono text-xs text-slate-600">Ứng dụng có sẵn trên iPadOS</td>
+                            <td class="p-3">Lấy đoạn thu âm thuyết minh (giọng đọc Buổi 1) và nhận file video MP4 sau khi xuất từ Canva về máy.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Quản lý tệp cục bộ rõ ràng, nộp trực tiếp lên Canvas LMS không bị nén vỡ hình.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Khung Hình Chụp Thực Tế iPad: Bộ Công Cụ Dựng Video -->
+            <div class="mt-4 p-4 bg-slate-50 border border-dashed border-slate-300 rounded-xl">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-camera text-[#0267B1]"></i> Vị Trí Chụp Màn Hình Minh Họa Thực Tế (Trên iPad)
+                    </span>
+                    <span class="text-[11px] bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded font-bold">Hình 2.1 • Giao diện Canva Video trên Safari</span>
+                </div>
+                <div class="w-full h-48 bg-slate-200/70 border border-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 text-slate-500">
+                    <i class="fa-solid fa-tablet-screen-button text-4xl text-slate-400 mb-2"></i>
+                    <p class="text-xs font-bold text-slate-700">Khung hiển thị ảnh chụp màn hình Safari iPad mở trang chủ Canva</p>
+                    <p class="text-[11px] text-slate-500 mt-1 max-w-lg">
+                        <b>Hướng dẫn chụp:</b> Trên iPad, mở Safari truy cập <code>canva.com</code> → Chọn mục <b>Video</b> → Chọn mẫu <b>Video trên thiết bị di động (Mobile Video)</b>. Nhấn đồng thời <code>Nút Nguồn + Tăng Âm Lượng</code> để chụp ảnh màn hình lưu vào thư viện.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN 2: QUY TRÌNH THAO TÁC CÔNG CỤ DỰNG VIDEO (5 BƯỚC THỰC HIỆN) -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-8">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">2</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-[#0267B1]"></i> Quy Trình 5 Bước Thao Tác Kỹ Thuật Dựng Video 60s
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Dựa trên kịch bản và cảnh quay nhóm đã có sẵn, thực hiện tuần tự trên iPad</p>
+                </div>
+            </div>
+
+            <!-- BƯỚC 1: KHỞI TẠO KHUNG HÌNH CHUẨN 9:16 -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-[#0267B1] rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-[#0267B1] text-white rounded-lg flex items-center justify-center text-xs font-black">1</span>
+                        Khởi Tạo Khung Hình Chuẩn Video Dọc (9:16) Trên Canva
+                    </h4>
+                    <span class="text-xs font-semibold text-slate-500 bg-white px-2.5 py-1 rounded-md border border-slate-200">Thời lượng: 45–60 giây</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Mở Safari trên iPad và truy cập <code class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">canva.com</code>.</p>
+                    <p>• Tại thanh tìm kiếm hoặc mục <b>Tạo thiết kế (Create a design)</b>, gõ chọn: <b>Video trên thiết bị di động (Mobile Video)</b> có kích thước chuẩn <b>1080 x 1920 px</b>.</p>
+                    <p>• Đặt tên tệp dự án ở góc trên màn hình theo đúng quy chuẩn nộp bài: <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_Video60s</code> (Ví dụ: <code>9A1_Team02_Video60s</code>).</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 1 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-[#0267B1]"></i> Minh Họa Bước 1: Tạo Khung Hình Mobile Video
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-40 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-mobile-screen text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Giao diện khung làm việc 9:16 của Canva trên iPad Safari</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Nút tạo thiết kế và khung canvas màu trắng khổ dọc</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 2: TẢI VIDEO & HÌNH ẢNH LÊN CANVA -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-sky-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-sky-500 text-white rounded-lg flex items-center justify-center text-xs font-black">2</span>
+                        Tải Đoạn Phim Quay Sẵn & Ảnh Chụp Lên Canva Uploads
+                    </h4>
+                    <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200">Từ Thư Viện iPad</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Nhìn sang thanh công cụ bên trái giao diện Canva, chạm vào biểu tượng <b>Tải lên (Uploads)</b> có hình đám mây mũi tên.</p>
+                    <p>• Chạm vào nút tím <b>Tải tệp lên (Upload files)</b> → Chọn <b>Thư viện ảnh (Photo Library)</b> để chọn các đoạn clip nhóm đã quay sẵn bằng iPad.</p>
+                    <p>• Chờ thanh tải lên hoàn tất 100%. Các đoạn video sẽ xuất hiện sẵn sàng trong tab <i>Video</i> của Canva.</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 2 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-sky-500"></i> Minh Họa Bước 2: Tải Video Từ iPad Lên Canva
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-40 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-cloud-arrow-up text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Thanh Uploads của Canva hiển thị danh sách video đã tải lên</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Nút Tải lên và popup chọn từ Thư viện ảnh iPad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 3: CẮT GHÉP TRÊN TIMELINE CẢM ỨNG (TẠO HOOK 3S ĐẦU) -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-amber-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-amber-500 text-white rounded-lg flex items-center justify-center text-xs font-black">3</span>
+                        Cắt Ghép Clip Trên Dòng Thời Gian (Timeline) & Tạo Cảnh Hook 3s
+                    </h4>
+                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Kỹ thuật Giữ Chân Người Xem</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Dùng ngón tay chạm giữ video trong mục Tải lên và kéo thả xuống dòng thời gian (Timeline) ở dưới cùng màn hình iPad.</p>
+                    <p>• <b>Kỹ thuật Hook 3 giây đầu:</b> Đặt đoạn kịch tính hoặc câu hỏi gây chú ý nhất ngay ở 0:00 – 0:03 để giữ chân người xem không lướt qua.</p>
+                    <p>• <b>Cắt bỏ đoạn thừa (Split / Trim):</b> Kéo đầu đọc đến vị trí cần cắt → Chạm 2 lần hoặc bấm chuột phải ảo chọn <b>Tách trang (Split page)</b> → Chạm vào phần thừa và bấm biểu tượng Thùng rác để xóa.</p>
+                    <p>• Dùng thao tác kéo 2 đầu viền của từng cảnh để kéo dài hoặc rút ngắn thời lượng chính xác từng tích tắc (tổng video nên từ 45–55 giây).</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 3 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-amber-500"></i> Minh Họa Bước 3: Cắt Tách Clip Trên Timeline Canva
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-40 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-timeline text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Dòng Timeline bên dưới hiển thị các phân cảnh và nút Tách trang (Split)</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Thanh timeline đáy màn hình iPad và các phân cảnh 3s, 10s...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 4: THÊM CHỮ PHỤ ĐỀ TIẾNG ANH (SUBTITLE) & TƯƠNG PHẢN -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-emerald-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-emerald-500 text-white rounded-lg flex items-center justify-center text-xs font-black">4</span>
+                        Chèn Chữ Phụ Đề Tiếng Anh (Subtitles) & Canh Màu Tương Phản
+                    </h4>
+                    <span class="text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">Đánh Giá Media Tiếng Anh</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Nhấn vào tab <b>Văn bản (Text)</b> ở thanh công cụ bên trái → Chọn <i>Thêm tiêu đề phụ (Add a subheading)</i>.</p>
+                    <p>• Nhập câu thoại hoặc thông điệp chính bằng <b>Tiếng Anh</b> chuẩn xác (ngắn gọn từ 4–7 từ mỗi dòng để người xem đọc kịp).</p>
+                    <p>• <b>Quy chuẩn kiểu chữ:</b> Dùng phông chữ không chân rõ ràng như <b>Montserrat</b>, <b>League Spartan</b> hoặc <b>Open Sans</b>. Cỡ chữ to (từ 45–60pt).</p>
+                    <p>• <b>Chống chìm chữ:</b> Chọn chữ màu Trắng hoặc Vàng sáng. Vào mục <i>Hiệu ứng (Effects)</i> → Chọn kiểu <b>Nâng cao (Lift)</b> hoặc <b>Nền (Background)</b> màu đen mờ để chữ luôn nổi bật trên mọi cảnh quay.</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 4 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-emerald-500"></i> Minh Họa Bước 4: Chèn Phụ Đề Chữ Nổi Bật Trên Video
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-40 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-closed-captioning text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Khung hình video có dòng phụ đề Tiếng Anh tương phản cao ở 1/3 dưới</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Màn hình video có chữ tiếng Anh và bảng hiệu ứng Text Effects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 5: LỒNG NHẠC NỀN & XUẤT VIDEO MP4 CHUẨN -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-indigo-600 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-indigo-600 text-white rounded-lg flex items-center justify-center text-xs font-black">5</span>
+                        Lồng Nhạc Nền, Chỉnh Âm Lượng 15% & Xuất File MP4 Hoàn Chỉnh
+                    </h4>
+                    <span class="text-xs font-semibold text-indigo-800 bg-indigo-50 px-2.5 py-1 rounded-md border border-indigo-200">Xuất File Về iPad</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• <b>Thêm nhạc nền:</b> Vào mục <i>Âm thanh (Audio)</i> trên Canva (hoặc tải đoạn âm thanh đã thu ở Buổi 1 lên tab Tải lên).</p>
+                    <p>• <b>Quy chuẩn âm lượng vàng:</b> Chạm vào thanh audio tím dưới timeline → Bấm biểu tượng <b>Âm lượng (Volume)</b> → Kéo hạ xuống mức <b>15% – 20%</b> để tiếng nhạc không đè lấp giọng nói.</p>
+                    <p>• <b>Xuất file MP4:</b> Chạm nút <b>Chia sẻ (Share)</b> ở góc trên bên phải → Chọn <b>Tải xuống (Download)</b> → Loại tệp chọn <b>Video MP4</b> → Chất lượng chọn <b>1080p Full HD</b> (hoặc 720p) → Bấm <b>Tải xuống</b>.</p>
+                    <p>• Trình duyệt Safari sẽ hiển thị hộp thoại xác nhận tải về → Chạm <b>Tải về (Download)</b> để lưu tệp vào ứng dụng <i>Tệp (Files) → Tải về (Downloads)</i> trên iPad.</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 5 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-indigo-600"></i> Minh Họa Bước 5: Bảng Xuất Video MP4 Trên Safari iPad
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-40 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-file-arrow-down text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Menu Chia sẻ → Tải xuống Video MP4 và thông báo tải file của Safari iPad</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Hộp thoại Tải xuống của Canva và biểu tượng download màu xanh của Safari</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PHẦN 3: YÊU CẦU ĐỊNH DẠNG & SẢN PHẨM NỘP -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-4">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-lg shadow-sm">3</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-box-archive text-emerald-600"></i> Yêu Cầu Định Dạng & Sản Phẩm Nộp
+                    </h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
+                    <span class="font-bold text-[#0267B1] block">1. Sản Phẩm Cần Nộp</span>
+                    <p class="text-slate-600 leading-relaxed">
+                        <b>01 Video ngắn hoàn chỉnh</b> (thời lượng 45–60 giây), có cảnh Hook 3s đầu ấn tượng, phụ đề tiếng Anh và nhạc nền 15%.
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
+                    <span class="font-bold text-sky-700 block">2. Định Dạng Tệp Chấp Nhận</span>
+                    <p class="text-slate-600 leading-relaxed">
+                        Định dạng chuẩn <code class="bg-blue-100 text-[#0267B1] font-bold px-2 py-0.5 rounded">.mp4</code> (Tỷ lệ khung hình dọc 9:16 hoặc ngang 16:9, độ phân giải 1080p hoặc 720p).
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
+                    <span class="font-bold text-emerald-700 block">3. Quy Cách Đặt Tên Tệp</span>
+                    <p class="text-slate-600 leading-relaxed">
+                        Đặt tên tệp không dấu: <code class="bg-amber-100 text-amber-900 font-bold px-1.5 py-0.5 rounded">Lop_TenNhom_Video60s.mp4</code> (Ví dụ: <code>9A1_Team02_Video60s.mp4</code>).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thanh Điều Hướng Chuyển Buổi -->
+        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-slate-200">
+            <a href="buoi_01_podcast.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-arrow-left"></i> Buổi 1: Thu Âm Podcast Online
+            </a>
+            <a href="index.html" class="w-full sm:w-auto px-6 py-3 bg-[#0267B1] hover:bg-[#0C3860] text-white rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-house"></i> Về Cổng Lộ Trình
+            </a>
+            <a href="buoi_03_thu_thach_ai.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                Buổi 3: Thử Thách AI & Fact-Check <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer Chuẩn Á Châu -->
+    <footer class="w-full bg-[#0C3860] text-white py-6 border-t border-blue-900 mt-12">
+        <div class="w-full px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-blue-200">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-[#0267B1] text-base"></i>
+                <span>Tổ Tin học • Trường Quốc tế Á Châu (Asian School) — Năm học 2026–2027</span>
+            </div>
+            <div>Học liệu số Real World Lab — Tối ưu hóa 100% cho iPad và công cụ Web Online</div>
+        </div>
+    </footer>
+
+
+    <!-- MODAL LIGHTBOX XEM ẢNH FULL MÀN HÌNH CHUẨN Á CHÂU -->
+    <div id="image-lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-300" onclick="closeLightbox(event)">
+        <div class="w-full max-w-6xl flex justify-between items-center mb-3 px-2 text-white">
+            <span id="lightbox-title" class="text-sm sm:text-base font-bold text-sky-300 tracking-wide flex items-center gap-2">
+                <i class="fa-solid fa-image text-[#0267B1]"></i> <span></span>
+            </span>
+            <button onclick="closeLightboxDirect()" class="bg-white/20 hover:bg-white/30 text-white rounded-full w-9 h-9 flex items-center justify-center transition text-lg" aria-label="Đóng">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="relative max-w-6xl max-h-[85vh] flex items-center justify-center overflow-auto p-2">
+            <img id="lightbox-img" src="" alt="Ảnh phóng to" class="max-w-full max-h-[82vh] object-contain rounded-xl shadow-2xl border border-slate-700 bg-slate-900" onclick="event.stopPropagation()">
+        </div>
+        <div class="mt-3 text-xs text-slate-400 flex items-center gap-2">
+            <i class="fa-regular fa-keyboard"></i> Nhấn <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200">ESC</kbd> hoặc chạm bất kỳ đâu bên ngoài để đóng.
+        </div>
+    </div>
+
+    <!-- SCRIPT ĐIỀU KHIỂN LIGHTBOX PHÓNG TO ẢNH -->
+    <script>
+        function openLightbox(src, title) {
+            const lightbox = document.getElementById("image-lightbox");
+            const img = document.getElementById("lightbox-img");
+            const titleElem = document.querySelector("#lightbox-title span");
+            img.src = src;
+            titleElem.textContent = title;
+            lightbox.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLightboxDirect() {
+            const lightbox = document.getElementById("image-lightbox");
+            lightbox.classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === "image-lightbox") {
+                closeLightboxDirect();
+            }
+        }
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                closeLightboxDirect();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="vi" class="w-full h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keynote Presentation: Buổi Định Hướng Real World Lab Khối 9 | Asian School</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .slide-hidden { display: none; }
+        .slide-active { display: flex; animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.99); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        kbd { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="w-full h-full bg-slate-950 text-white overflow-hidden select-none flex flex-col m-0 p-0">
+
+    <!-- Top Navigation Bar -->
+    <header class="w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-2.5 flex justify-between items-center z-50 flex-shrink-0">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo_asian_school.png" alt="Logo Asian School" class="h-8 w-auto object-contain bg-white rounded px-1.5 py-0.5" onerror="this.src='https://placehold.co/100x40/0267B1/FFFFFF?text=AHS';">
+            <div class="hidden sm:block">
+                <span class="text-xs font-bold text-sky-400 uppercase tracking-widest block">Real World Lab • Grade 9</span>
+                <span class="text-sm font-black text-white">Buổi Định Hướng: Từ Người Xem Đến Người Sáng Tạo</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center gap-2">
+            <span id="slide-indicator" class="text-xs font-mono bg-slate-800 text-sky-300 px-3 py-1.5 rounded-lg border border-slate-700 font-bold">
+                Slide 1 / 20
+            </span>
+            <button onclick="togglePresenterNotes()" id="btn-notes" class="text-xs bg-[#0267B1] hover:bg-sky-600 text-white px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5 transition shadow">
+                <i class="fa-solid fa-microphone-lines"></i> <span class="hidden md:inline">Kịch Bản Diễn Giả (P)</span>
+            </button>
+            <a href="index.html" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <button onclick="toggleFullScreen()" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 p-2 rounded-lg border border-slate-700 transition" title="Toàn màn hình">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Presentation Stage (Full Screen Fluid) -->
+    <main class="w-full flex-1 relative flex overflow-hidden">
+        
+        <!-- SLIDES CONTAINER -->
+        <div id="slides-viewport" class="flex-1 w-full h-full relative overflow-y-auto">
+
+            <!-- SLIDE 1: COVER / CÚ CHẠM ĐẦU TIÊN -->
+            <section class="slide-active w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-gradient-to-br from-[#0C3860] via-[#0267B1] to-[#0A2540]" data-slide="1"
+                     data-note="• KHỞI ĐẦU: Đứng giữa sân khấu, mắt quét toàn bộ khán phòng. Giữ im lặng 3 giây để học sinh trật tự hoàn toàn.
+• TONE GIỌNG: Trầm ấm, hào hứng, tự tin.
+• LỜI DẪN: 'Chào mừng tất cả các nhà sáng tạo tương lai của Khối 9 Asian School! Suốt những năm qua, các em đã học rất nhiều về máy tính. Nhưng năm học này, chúng ta sẽ không ngồi gõ văn bản hay học lý thuyết suông. Chúng ta sẽ cùng nhau thực hiện một cuộc chuyển dịch lớn nhất của lứa tuổi 14: BƯỚC TỪ NGƯỜI XEM SANG NGƯỜI SÁNG TẠO!'"
+                     data-tip="Không đọc chữ trên slide. Mắt nhìn thẳng vào học sinh hàng giữa.">
+                <div class="inline-block bg-white/10 backdrop-blur border border-white/20 text-sky-200 text-xs sm:text-sm font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
+                    Chương Trình Trải Nghiệm Nghề Nghiệp Số • Năm Học 2026–2027
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight max-w-5xl">
+                    REAL WORLD LAB <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-sky-200 to-white">
+                        DIGITAL CREATOR
+                    </span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-bold text-sky-100 mt-6 max-w-3xl leading-relaxed">
+                    "Từ một người chỉ biết bấm Like và lướt màn hình... trở thành người dẫn dắt xu hướng và tạo ra giá trị thật!"
+                </p>
+                <div class="mt-10 flex items-center gap-4 text-xs sm:text-sm text-sky-200 bg-black/30 backdrop-blur px-5 py-2.5 rounded-xl border border-white/10">
+                    <span class="font-bold"><i class="fa-solid fa-chalkboard-user mr-1.5"></i>GV Tin học: Thầy Trần Gia Huy</span>
+                    <span>•</span>
+                    <span>The Asian International School</span>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: CÂU HỎI MỞ MÀN (THE HOOK) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-[#08182B]" data-slide="2"
+                     data-note="• HOOK: Đặt câu hỏi và chờ học sinh giơ tay.
+• LỜI DẪN: 'Thầy có một câu hỏi thật lòng: Bao nhiêu bạn trong phòng này, sáng nay vừa mở mắt dậy là với tay lấy chiếc điện thoại hoặc iPad lướt TikTok, Shorts hay Instagram? (Cười nhẹ). Thầy cũng từng như vậy. Nhưng các em có biết không? Mỗi phút các em lướt màn hình, các em đang đóng vai là KHÁCH HÀNG tiêu thụ thời gian cho các nền tảng kiếm tiền. Vậy câu hỏi đặt ra là: Bao giờ thì đến lượt CHÚNG TA là người tạo ra nội dung khiến người khác phải dừng lại và lắng nghe?'"
+                     data-tip="Tạo không khí cởi mở, không phán xét, kết nối trực tiếp với thói quen của học sinh.">
+                <span class="text-amber-400 font-extrabold uppercase text-sm tracking-widest mb-4">Câu Hỏi Bí Mật Đầu Tiết Học</span>
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black max-w-4xl leading-snug">
+                    "Mỗi ngày bạn dành bao nhiêu giờ để <span class="text-rose-400 underline decoration-rose-500">xem</span> nội dung của người khác?"
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mt-12 w-full text-left">
+                    <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-800 border-l-4 border-l-rose-500 space-y-2">
+                        <span class="text-xs font-bold text-slate-400 uppercase">Hiện Tại: CONSUMER (Người Tiêu Thụ)</span>
+                        <div class="text-xl font-black text-rose-300">Lướt màn hình thụ động</div>
+                        <p class="text-xs text-slate-400">Dành thời gian, cảm xúc và dữ liệu cá nhân cho các thuật toán mạng xã hội.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-800 border-l-4 border-l-emerald-500 space-y-2">
+                        <span class="text-xs font-bold text-slate-400 uppercase">Tương Lai Lớp 9: CREATOR (Người Sáng Tạo)</span>
+                        <div class="text-xl font-black text-emerald-300">Làm chủ công nghệ số</div>
+                        <p class="text-xs text-slate-400">Tạo ra Podcast, Video, Website và chiến dịch truyền thông giải quyết vấn đề thật.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: BỨC TRANH THẾ GIỚI - AI & NGHỀ NGHIỆP -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-gradient-to-b from-[#0A2540] to-slate-950" data-slide="3"
+                     data-note="• LỜI DẪN: 'Các em hãy nhìn bức tranh thực tế: Ngày nay có nghề nào KHÔNG dùng công nghệ? Người nông dân lái drone phun thuốc chính xác từng centimet; thợ sửa xe cắm iPad chẩn đoán bo mạch; bác sĩ dùng AI hỗ trợ đọc phim CT. Không còn nghề nào nằm ngoài công nghệ cả. Vậy ai sẽ là người chiến thắng trong thị trường nghề nghiệp tương lai? Không phải người làm việc như một cái máy, mà là người BIẾT DÙNG CÔNG NGHỆ ĐỂ TẠO RA GIÁ TRỊ THẬT CHO CON NGƯỜI!'"
+                     data-tip="Nhấn giọng vào chữ 'TẠO GIÁ TRỊ THẬT'.">
+                <span class="text-sky-400 font-extrabold uppercase text-xs tracking-widest mb-3">Bối Cảnh Kỷ Nguyên Số</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-10">
+                    Ngành Nghề Nào Ngày Nay <span class="text-amber-400">Không Dùng</span> Công Nghệ?
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-6xl text-center">
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-wheat-awn text-3xl text-emerald-400 mb-2"></i>
+                        <div class="text-sm font-bold">Nông Nghiệp</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Drone & Cảm biến đất</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-user-doctor text-3xl text-sky-400 mb-2"></i>
+                        <div class="text-sm font-bold">Y Tế</div>
+                        <div class="text-[11px] text-slate-400 mt-1">AI đọc phim & Hồ sơ số</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-wrench text-3xl text-amber-400 mb-2"></i>
+                        <div class="text-sm font-bold">Kỹ Thuật</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Chẩn đoán lỗi trên Tablet</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-shop text-3xl text-purple-400 mb-2"></i>
+                        <div class="text-sm font-bold">Kinh Doanh</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Livestream & Thanh toán QR</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-video text-3xl text-rose-400 mb-2"></i>
+                        <div class="text-sm font-bold">Truyền Thông</div>
+                        <div class="text-[11px] text-slate-400 mt-1">Sản xuất nội dung đa nền tảng</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-500 transition">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-blue-400 mb-2"></i>
+                        <div class="text-sm font-bold">Giáo Dục</div>
+                        <div class="text-[11px] text-slate-400 mt-1">LMS & Trợ lý học tập AI</div>
+                    </div>
+                </div>
+                <div class="mt-8 text-sm sm:text-base text-sky-200 font-bold bg-blue-950/60 px-6 py-3 rounded-full border border-blue-800/80">
+                    💡 Kết luận: Nguồn nhân lực chất lượng cao = Người biết làm chủ công nghệ để giải quyết bài toán cuộc sống!
+                </div>
+            </section>
+
+            <!-- SLIDE 4: MỤC TIÊU LỚN NHẤT: HỒ SƠ NĂNG LỰC SỐ (DIGITAL PORTFOLIO) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-[#0B1E36]" data-slide="4"
+                     data-note="• LỜI DẪN: 'Vậy cuối năm lớp 9, các em cầm trong tay điều gì? Một điểm số trên học bạ? Điểm số là đương nhiên. Nhưng thứ giúp các em xin học bổng, tự tin bước vào cấp 3 và trường quốc tế chính là HỒ SƠ NĂNG LỰC SỐ (Digital Portfolio). Khi người khác hỏi: 'Em làm được gì?', em không cần nói nhiều, chỉ cần gửi 1 đường link trang web dự án chứa đầy đủ Podcast, Video, Chiến dịch truyền thông mang tên chính nhóm của em!'"
+                     data-tip="Chỉ vào biểu tượng tấm Passport và Portfolio ở giữa màn hình.">
+                <span class="text-amber-400 font-extrabold uppercase text-xs tracking-widest mb-3">Đầu Ra Đắt Giá Của Năm Học</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-8">
+                    Hồ Sơ Năng Lực Số (Digital Portfolio) Của Em
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full text-left">
+                    <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg">01</div>
+                        <h4 class="font-bold text-lg text-white">Sản Phẩm Đa Phương Tiện Thật</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Không phải bài kiểm tra giấy lý thuyết. Đó là bản thu âm Podcast, Video 60 giây và Website do chính em trực tiếp dựng.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-lg">02</div>
+                        <h4 class="font-bold text-lg text-white">Hộ Chiếu Năng Lực (Passport)</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Mỗi bạn sở hữu một cuốn Passport ghi nhận từng vai trò: Trưởng nhóm, Biên kịch, Kỹ thuật viên âm thanh, Thiết kế Web.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/80 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">03</div>
+                        <h4 class="font-bold text-lg text-white">Minh Chứng Nộp Học Bổng</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Một đường link duy nhất đính kèm CV nộp vào trường THPT hoặc xin học bổng du học chứng minh năng lực công nghệ vượt trội.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: MÔ HÌNH DIGITAL AGENCY (TRAO QUYỀN) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-gradient-to-br from-[#0C3860] to-[#0267B1]" data-slide="5"
+                     data-note="• EMPOWERMENT (TRAO QUYỀN): Bước ra mép sân khấu. Nhìn vào cả lớp.
+• LỜI DẪN: 'Và đây là cách chúng ta sẽ vận hành: Trong phòng học này, thầy không gọi các em là những học sinh ngồi nghe thụ động. Thầy nhìn thấy ở đây 8–9 DIGITAL AGENCY ĐỘC LẬP! Mỗi nhóm 4–5 bạn sẽ là một công ty truyền thông thu nhỏ. Các em tự đặt tên, tự thiết kế logo, tự chọn một vấn đề thật của học sinh Á Châu và đồng hành cùng nhau trong suốt 6 buổi học! Thầy cô đóng vai trò là Cố vấn chiến lược (Mentor) cho các em.'"
+                     data-tip="Nhấn mạnh tinh thần trách nhiệm nhóm và sự bình đẳng sáng tạo.">
+                <span class="text-amber-300 font-extrabold uppercase text-xs tracking-widest mb-3">Mô Hình Vận Hành Lớp Học</span>
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black mb-8">
+                    Mỗi Nhóm Là Một <span class="text-amber-300 underline decoration-white">Digital Agency</span>
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 max-w-5xl w-full text-center">
+                    <div class="p-5 bg-white/10 backdrop-blur rounded-2xl border border-white/20">
+                        <i class="fa-solid fa-users text-3xl text-sky-200 mb-2"></i>
+                        <div class="font-bold text-sm">4–5 Thành Viên</div>
+                        <div class="text-xs text-sky-100 mt-1">Phân chia vai trò rõ ràng</div>
+                    </div>
+                    <div class="p-5 bg-white/10 backdrop-blur rounded-2xl border border-white/20">
+                        <i class="fa-solid fa-bullseye text-3xl text-amber-300 mb-2"></i>
+                        <div class="font-bold text-sm">1 Đề Tài Xuyên Suốt</div>
+                        <div class="text-xs text-sky-100 mt-1">Giải quyết 1 bài toán thực tế</div>
+                    </div>
+                    <div class="p-5 bg-white/10 backdrop-blur rounded-2xl border border-white/20">
+                        <i class="fa-solid fa-laptop-code text-3xl text-emerald-300 mb-2"></i>
+                        <div class="font-bold text-sm">6 Sản Phẩm Đa Dạng</div>
+                        <div class="text-xs text-sky-100 mt-1">Podcast, Video, Web, Poster</div>
+                    </div>
+                    <div class="p-5 bg-white/10 backdrop-blur rounded-2xl border border-white/20">
+                        <i class="fa-solid fa-award text-3xl text-rose-300 mb-2"></i>
+                        <div class="font-bold text-sm">Thầy Cô Là Mentor</div>
+                        <div class="text-xs text-sky-100 mt-1">Đồng hành, không phán xét</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: HÀNH TRÌNH 6 CHẶNG ĐUA SÁNG TẠO -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-6 lg:p-12 bg-slate-950" data-slide="6"
+                     data-note="• PACING: Lướt nhanh qua 6 cột mốc như một bản đồ game 6 vòng.
+• LỜI DẪN: 'Đây là 6 chặng đua sáng tạo của các em trong năm học:
+Chặng 1 (Tháng 10): Podcast âm thanh – Chạm vào cảm xúc bằng giọng nói.
+Chặng 2 (Tháng 11): Video 60 giây – Chinh phục người xem trong 3 giây đầu.
+Chặng 3 (Tháng 12): Thử thách AI – Dùng AI như trợ lý và kiểm chứng sự thật.
+Chặng 4 (Tháng 1): Website Google Sites – Xây dựng ngôi nhà số cho dự án.
+Chặng 5 (Tháng 2): Digital Campaign – Poster A4 và mã QR dán khắp trường.
+Chặng 6 (Tháng 3): Creator Showcase – 3 phút tỏa sáng trước toàn trường!'"
+                     data-tip="Chỉ vào từng chặng theo nhịp bước chân từ trái qua phải.">
+                <span class="text-sky-400 font-extrabold uppercase text-xs tracking-widest mb-2">Lộ Trình Trải Nghiệm</span>
+                <h2 class="text-2xl sm:text-4xl font-black mb-6">
+                    Bản Đồ 6 Chặng Đua Của Digital Agency
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-3 max-w-6xl w-full text-left">
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-purple-500 transition">
+                        <div class="text-xs font-bold text-purple-400 mb-1">CHẶNG 1 • T10</div>
+                        <h4 class="font-bold text-sm text-white">Podcast</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Thu âm, ghép nhạc Lo-fi bằng iPad.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-rose-500 transition">
+                        <div class="text-xs font-bold text-rose-400 mb-1">CHẶNG 2 • T11</div>
+                        <h4 class="font-bold text-sm text-white">Video 60 Giây</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Dựng video dọc 9:16 trên Canva Web.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-teal-500 transition">
+                        <div class="text-xs font-bold text-teal-400 mb-1">CHẶNG 3 • T12</div>
+                        <h4 class="font-bold text-sm text-white">Thử Thách AI</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Prompting & Fact-check Google.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-blue-500 transition">
+                        <div class="text-xs font-bold text-blue-400 mb-1">CHẶNG 4 • T01</div>
+                        <h4 class="font-bold text-sm text-white">Website</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Landing page Google Sites iPad.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-amber-500 transition">
+                        <div class="text-xs font-bold text-amber-400 mb-1">CHẶNG 5 • T02</div>
+                        <h4 class="font-bold text-sm text-white">Poster & QR</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Thiết kế A4 & Tạo mã QR vĩnh viễn.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-emerald-500 transition">
+                        <div class="text-xs font-bold text-emerald-400 mb-1">CHẶNG 6 • T03</div>
+                        <h4 class="font-bold text-sm text-white">Showcase</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Thuyết trình 3 phút & Portfolio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: CHỌN ĐỀ TÀI THẬT (REAL-WORLD ISSUES) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-[#0B1E36]" data-slide="7"
+                     data-note="• LỜI DẪN: 'Nhưng sản phẩm của các em làm ra để nói về cái gì? Chúng ta KHÔNG làm những đề tài xa vời viển vông. Hãy chọn những vấn đề đang nhức nhối ngay quanh lứa tuổi các em:
+1) Thức khuya lướt điện thoại đến 1 giờ sáng mệt mỏi;
+2) Áp lực so sánh bản thân khi thấy bạn bè khoe điểm và ảnh đẹp trên mạng xã hội;
+3) Hay FOMO – sợ bị bỏ rơi nếu không online liên tục!
+Chỉ khi đề tài là THẬT, sản phẩm của các em mới chạm được vào trái tim người xem!'"
+                     data-tip="Liên hệ trực tiếp ảnh ví dụ ChatGPT mà học sinh đã làm thử.">
+                <span class="text-amber-400 font-extrabold uppercase text-xs tracking-widest mb-3">Nhiệm Vụ Bước 1</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-8">
+                    Chọn Một Vấn Đề Thật Của Lứa Tuổi 14–15
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full text-left">
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-amber-400 transition space-y-2">
+                        <div class="text-amber-400 text-xs font-bold uppercase">VẤN ĐỀ 1</div>
+                        <h4 class="text-lg font-bold text-white">"Chỉ 5 phút nữa thôi!"</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Thói quen lướt TikTok, chơi game đến khuya dẫn đến thiếu ngủ, uể oải trong lớp học.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-sky-400 transition space-y-2">
+                        <div class="text-sky-400 text-xs font-bold uppercase">VẤN ĐỀ 2</div>
+                        <h4 class="text-lg font-bold text-white">"Tại sao ai cũng giỏi hơn mình?"</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Áp lực đồng trang lứa và sự lo âu khi so sánh bản thân với hình ảnh hoàn hảo trên mạng.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 hover:border-emerald-400 transition space-y-2">
+                        <div class="text-emerald-400 text-xs font-bold uppercase">VẤN ĐỀ 3</div>
+                        <h4 class="text-lg font-bold text-white">Hội Chứng Sợ Bỏ Lỡ (FOMO)</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Cảm giác bất an khi không cầm điện thoại, mất tập trung khi đang ngồi học bài.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: CA SĨ / CASE STUDY: BỘ NHẬN DIỆN MẪU "OFFLINE 20" -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-slate-950" data-slide="8"
+                     data-note="• LỜI DẪN: 'Để các em dễ hình dung, thầy đã làm sẵn một dự án mẫu cực kỳ chuyên nghiệp: Dự án 'Offline 20' với thông điệp 'Look up. Play more - Ngước nhìn lên, chơi nhiều hơn'.
+Một bộ nhận diện chỉ cần 4 thứ: 1) Tên nhóm ấn tượng, 2) Một câu Slogan ngắn gọn, 3) Bảng màu chủ đạo, và 4) Một Logo tự vẽ trên Canva trong 15 phút. Nhìn vào đây, người ta biết ngay các em là một Agency làm việc nghiêm túc!'"
+                     data-tip="Chiếu logo Offline 20 và bảng màu sắc nét.">
+                <span class="text-sky-400 font-extrabold uppercase text-xs tracking-widest mb-3">Case Study Truyền Cảm Hứng</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-8">
+                    Bộ Nhận Diện Mẫu: Chiến Dịch <span class="text-sky-400">"Offline 20"</span>
+                </h2>
+                <div class="p-6 bg-slate-900 rounded-3xl border border-slate-800 max-w-4xl w-full flex flex-col md:flex-row items-center gap-8 text-left">
+                    <div class="w-40 h-40 bg-gradient-to-tr from-sky-500 to-[#0267B1] rounded-2xl flex flex-col items-center justify-center p-4 shadow-xl flex-shrink-0 text-center">
+                        <i class="fa-solid fa-moon text-4xl text-amber-300 mb-1"></i>
+                        <span class="font-black text-xl text-white tracking-wider">OFFLINE 20</span>
+                        <span class="text-[9px] text-sky-200 uppercase font-semibold">Digital Wellbeing</span>
+                    </div>
+                    <div class="space-y-3 flex-1">
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase font-bold">Thông Điệp Cốt Lõi (Slogan):</span>
+                            <div class="text-xl font-black text-amber-300 italic">"Look up. Play more." (Ngước nhìn lên, chơi nhiều hơn)</div>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase font-bold">Màu Nhận Diện (Brand Colors):</span>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="px-3 py-1 rounded bg-[#0267B1] text-xs font-mono font-bold text-white">#0267B1 Xanh Á Châu</span>
+                                <span class="px-3 py-1 rounded bg-[#F59E0B] text-xs font-mono font-bold text-slate-950">#F59E0B Hổ Phách</span>
+                                <span class="px-3 py-1 rounded bg-slate-800 text-xs font-mono font-bold text-slate-200">#0F172A Xanh Đen</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Mục tiêu chiến dịch: Vận động học sinh tắt điện thoại trước giờ ngủ 20 phút để cải thiện chất lượng giấc ngủ và tâm trạng.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: NGUYÊN TẮC VÀNG VỀ AI (CON NGƯỜI CẦM LÁI) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-[#08182B]" data-slide="9"
+                     data-note="• METAPHOR (ẨN DỤ SÂN KHẤU):
+• LỜI DẪN: 'Trong chương trình này, thầy cho phép các em dùng AI như ChatGPT hay Gemini. Nhưng hãy nhớ nguyên tắc vàng: AI GIỐNG NHƯ MỘT CHIẾC XE ĐUA F1 – nó rất nhanh, nhưng nó không biết đường đi! Người ngồi sau vô lăng, nhấn ga và đạp phanh là BỘ NÃO CỦA CÁC EM. AI có thể bịa đặt thông tin, AI có thể sai. Ý tưởng là của nhóm trước – AI gợi ý sau – và chính các em là người chịu trách nhiệm cuối cùng!'"
+                     data-tip="Đưa nắm tay lên biểu thị sự làm chủ.">
+                <span class="text-amber-400 font-extrabold uppercase text-xs tracking-widest mb-3">Đạo Đức Số & Năng Lực AI</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-8">
+                    AI Là Trợ Lý — <span class="text-amber-400">Em Là Người Cầm Lái</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full text-left">
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 space-y-2">
+                        <span class="text-xs font-bold text-sky-400 uppercase">1. AI LÀM GÌ?</span>
+                        <h4 class="font-bold text-base text-white">Gợi ý & Mở rộng góc nhìn</h4>
+                        <p class="text-xs text-slate-400">Gợi ý 3 vấn đề, phác thảo khung kịch bản, đề xuất cách viết tiếng Anh trôi chảy.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 space-y-2">
+                        <span class="text-xs font-bold text-amber-400 uppercase">2. BỘ LỌC KIỂM CHỨNG</span>
+                        <h4 class="font-bold text-base text-white">Cổng Trách Nhiệm Số</h4>
+                        <p class="text-xs text-slate-400">Fact-check đối soát nguồn uy tín trên Google. Không nhập dữ liệu cá nhân vào AI.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900/90 rounded-2xl border border-slate-800 space-y-2">
+                        <span class="text-xs font-bold text-emerald-400 uppercase">3. EM QUYẾT ĐỊNH</span>
+                        <h4 class="font-bold text-base text-white">Sáng tạo & Chịu trách nhiệm</h4>
+                        <p class="text-xs text-slate-400">Nhóm tự quyết định giữ lại câu nào, xóa câu nào và tự tin thuyết trình sản phẩm.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: VŨ KHÍ BÍ MẬT - TRANG WEB HỌC LIỆU TẠI NHÀ -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-[#0C3860]" data-slide="10"
+                     data-note="• LỜI DẪN: 'Thầy biết nhiều bạn sẽ lo lắng: 'Thầy ơi lỡ về nhà em quên cách làm thì sao?'. Đừng lo! Thầy đã xây dựng riêng một CỔNG TRANG WEB HƯỚNG DẪN TẠI NHÀ tối ưu 100% cho iPad. Mọi bước làm từ Buổi 1 đến Buổi 6 đều có hình ảnh chụp thực tế màn hình iPad, các em chỉ cần mở ra, chạm vào xem ảnh phóng to và làm theo từng bước cực kỳ dễ dàng!'"
+                     data-tip="Mở giao diện web local minh họa cho học sinh thấy.">
+                <span class="text-sky-300 font-extrabold uppercase text-xs tracking-widest mb-3">Vũ Khí Hỗ Trợ Tại Nhà</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-6">
+                    Trang Web Hướng Dẫn Từng Bước Trên iPad
+                </h2>
+                <div class="p-6 bg-white text-slate-800 rounded-3xl max-w-4xl w-full shadow-2xl flex flex-col sm:flex-row items-center gap-6 text-left">
+                    <div class="p-4 bg-blue-50 rounded-2xl border border-blue-200 text-center flex-shrink-0">
+                        <i class="fa-solid fa-tablet-screen-button text-5xl text-[#0267B1] mb-2"></i>
+                        <div class="text-xs font-extrabold text-[#0C3860]">Tối Ưu 100% iPad</div>
+                    </div>
+                    <div class="space-y-2 flex-1 text-xs sm:text-sm">
+                        <div class="font-extrabold text-base text-[#0C3860]">Cổng Học Liệu Số Real World Lab Asian School</div>
+                        <p class="text-slate-600 leading-relaxed">
+                            • Không cần cài phần mềm máy tính phức tạp, toàn bộ dùng web trực tuyến Safari.<br>
+                            • Có sẵn ảnh chụp thực tế trên iPad cho từng bước (kèm tính năng bấm phóng to).<br>
+                            • Bảng Checklist nghiệm thu rõ ràng giúp các em tự kiểm tra trước khi nộp bài.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: NHIỆM VỤ 48 GIỜ TỚI (CALL TO ACTION) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-slate-950" data-slide="11"
+                     data-note="• ACTION PLAN: Rõ ràng, dứt khoát.
+• LỜI DẪN: 'Trước khi bước vào Buổi 1 (Podcast), mỗi bạn chỉ cần hoàn thành 3 việc cùng đồng đội:
+1. Thành lập nhóm 4–5 bạn và bầu ra 1 nhóm trưởng;
+2. Thảo luận chọn 1 đề tài thật;
+3. Vẽ 1 chiếc Logo đơn giản trên Canva và hoàn thành bản Project Brief 1 trang.
+Thời gian: Từ hôm nay đến trước buổi học tuần sau!'"
+                     data-tip="Nhấn mạnh thời hạn và đầu việc cụ thể.">
+                <span class="text-emerald-400 font-extrabold uppercase text-xs tracking-widest mb-3">Kế Hoạch Khởi Động</span>
+                <h2 class="text-3xl sm:text-5xl font-black mb-8">
+                    Nhiệm Vụ Của Agency Trước Buổi 1
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full text-left">
+                    <div class="p-6 bg-slate-900 rounded-2xl border-l-4 border-l-[#0267B1] border-slate-800 space-y-2">
+                        <div class="text-[#0267B1] font-black text-xl">BƯỚC 1</div>
+                        <h4 class="font-bold text-white text-base">Thành Lập Nhóm</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Nhóm 4–5 bạn ăn ý. Bầu nhóm trưởng để gửi danh sách thành viên cho thầy.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900 rounded-2xl border-l-4 border-l-sky-500 border-slate-800 space-y-2">
+                        <div class="text-sky-400 font-black text-xl">BƯỚC 2</div>
+                        <h4 class="font-bold text-white text-base">Chốt Đề Tài & Logo</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Chọn 1 vấn đề thật (Sức khỏe số, áp lực mạng...) và vẽ Logo nhóm trên Canva.</p>
+                    </div>
+                    <div class="p-6 bg-slate-900 rounded-2xl border-l-4 border-l-emerald-500 border-slate-800 space-y-2">
+                        <div class="text-emerald-400 font-black text-xl">BƯỚC 3</div>
+                        <h4 class="font-bold text-white text-base">Nộp Project Brief</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Hoàn thành thẻ tóm tắt dự án 1 trang theo mẫu và tải lên hệ thống.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: ĐẤU TRÍ TƯƠNG TÁC (MINI-GAME INTRO) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-gradient-to-r from-indigo-900 via-purple-900 to-slate-950" data-slide="12"
+                     data-note="• GAMIFICATION: Bật năng lượng cả phòng lên!
+• LỜI DẪN: 'Bây giờ, để xem Agency nào nhạy bén và ghi nhớ thông tin nhanh nhất, chúng ta có một thử thách 3 câu hỏi tốc độ! Bạn nào trả lời đúng và nhanh nhất sẽ ghi điểm đầu tiên cho Agency của mình! Sẵn sàng chưa?'"
+                     data-tip="Đếm ngược 3 - 2 - 1 và mở câu hỏi.">
+                <i class="fa-solid fa-gamepad text-6xl text-amber-400 mb-4 animate-bounce"></i>
+                <span class="text-amber-400 font-extrabold uppercase text-xs tracking-widest mb-2">Thử Thách Tốc Độ 3 Phút</span>
+                <h2 class="text-4xl sm:text-6xl font-black mb-4">
+                    Đấu Trí Agency Khối 9!
+                </h2>
+                <p class="text-lg text-purple-200 max-w-xl">
+                    3 câu hỏi kiểm tra độ tập trung. Ai trả lời nhanh nhất ghi điểm khởi động!
+                </p>
+            </section>
+
+            <!-- SLIDE 13: CÂU HỎI 1 -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-6 lg:p-12 bg-slate-950" data-slide="13"
+                     data-note="• Đọc to câu hỏi: Cuối năm học này, tài sản số đắt giá nhất mỗi em có được là gì?
+• Cho học sinh hô đáp án (A, B, C hay D).">
+                <span class="text-amber-400 font-mono font-bold text-xs uppercase mb-2">Câu Hỏi 1 / 3</span>
+                <h3 class="text-2xl sm:text-3xl font-black max-w-3xl mb-8">
+                    Cuối năm học lớp 9, mỗi học sinh sẽ có trong tay điều gì giá trị nhất?
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl w-full text-left text-sm">
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>A.</b> Một tập đề thi trắc nghiệm trên giấy</div>
+                    <div class="p-4 bg-emerald-950/80 rounded-xl border-2 border-emerald-500 text-emerald-200 font-bold"><b>B.</b> Một Hồ sơ năng lực số (Digital Portfolio) chứa trọn bộ sản phẩm thật</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>C.</b> Một tài khoản mạng xã hội có nhiều follower</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>D.</b> Một chứng chỉ nghe giảng lý thuyết</div>
+                </div>
+            </section>
+
+            <!-- SLIDE 14: CÂU HỎI 2 -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-6 lg:p-12 bg-slate-950" data-slide="14"
+                     data-note="• Đọc câu hỏi 2: Sản phẩm đầu tiên và sản phẩm cuối cùng là gì?
+• Nhấn mạnh: Bắt đầu bằng Podcast và kết thúc bằng Showcase!">
+                <span class="text-amber-400 font-mono font-bold text-xs uppercase mb-2">Câu Hỏi 2 / 3</span>
+                <h3 class="text-2xl sm:text-3xl font-black max-w-3xl mb-8">
+                    Sản phẩm ĐẦU TIÊN (Buổi 1) và CUỐI CÙNG (Buổi 6) của hành trình là gì?
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl w-full text-left text-sm">
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>A.</b> Website → Video 60s</div>
+                    <div class="p-4 bg-emerald-950/80 rounded-xl border-2 border-emerald-500 text-emerald-200 font-bold"><b>B.</b> Podcast âm thanh (Buổi 1) → Creator Showcase (Buổi 6)</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>C.</b> Poster A4 → Thử thách AI</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>D.</b> Viết kịch bản → Thi kiểm tra học kỳ</div>
+                </div>
+            </section>
+
+            <!-- SLIDE 15: CÂU HỎI 3 -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-6 lg:p-12 bg-slate-950" data-slide="15"
+                     data-note="• Đọc câu hỏi 3: Trước Buổi 1 tuần sau, nhóm cần hoàn thành gì?
+• Đáp án: Project Brief và Logo nhóm!">
+                <span class="text-amber-400 font-mono font-bold text-xs uppercase mb-2">Câu Hỏi 3 / 3</span>
+                <h3 class="text-2xl sm:text-3xl font-black max-w-3xl mb-8">
+                    Trước khi bước vào Buổi 1 tuần sau, nhóm cần chuẩn bị điều gì?
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl w-full text-left text-sm">
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>A.</b> Quay xong toàn bộ video 60 giây</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>B.</b> Mua micro và máy quay phim chuyên nghiệp</div>
+                    <div class="p-4 bg-emerald-950/80 rounded-xl border-2 border-emerald-500 text-emerald-200 font-bold"><b>C.</b> Lập nhóm 4–5 bạn, chọn vấn đề và nộp Project Brief + Logo</div>
+                    <div class="p-4 bg-slate-900 rounded-xl border border-slate-800"><b>D.</b> Không cần chuẩn bị gì cả</div>
+                </div>
+            </section>
+
+            <!-- SLIDE 16: CALL TO ACTION KẾT THÚC (THE CLIMAX) -->
+            <section class="slide-hidden w-full h-full flex-col justify-center items-center text-center p-8 lg:p-16 bg-gradient-to-tr from-[#0C3860] via-[#0267B1] to-[#0A2540]" data-slide="16"
+                     data-note="• THE CLIMAX (ĐỈNH ĐIỂM BÀI NÓI):
+• LỜI DẪN CUỐI: 'Các bạn học sinh thân mến! Lớp 9 không chỉ là năm học chuyển cấp. Đây là thời khắc các em chứng minh mình đã trưởng thành trong thế giới số. Đừng để người khác định nghĩa tương lai của các em qua những thuật toán lướt màn hình vô thức. Hãy biến chiếc iPad trên tay thành studio sáng tạo của riêng mình!
+Ngay sau tiếng chuông tan học hôm nay, hãy tìm những đồng đội ăn ý nhất và đặt tên cho Agency của mình!
+Thầy rất tự hào được đồng hành cùng các em. HẸN GẶP LẠI TẤT CẢ CÁC AGENCY Ở BUỔI 1: PODCAST TRUYỀN CẢM HỨNG!'"
+                     data-tip="Dừng lại 2 giây, mỉm cười và cúi chào chuyên nghiệp.">
+                <div class="w-16 h-16 bg-amber-400 text-slate-950 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-xl">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black max-w-4xl leading-tight">
+                    "Tương lai số không thuộc về người xem thụ động.<br>
+                    <span class="text-amber-300">Nó thuộc về những người dám sáng tạo!"</span>
+                </h2>
+                <p class="text-lg text-sky-100 mt-6 max-w-2xl">
+                    Hãy tìm đồng đội ngay hôm nay và sẵn sàng cho Buổi 1: Podcast – Kể một câu chuyện có ý nghĩa!
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-xs font-bold">
+                    <span class="px-4 py-2 bg-white/10 rounded-xl border border-white/20">#RealWorldLab</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-xl border border-white/20">#DigitalCreatorGrade9</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-xl border border-white/20">#TheAsianSchool</span>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- PRESENTER NOTES OVERLAY PANEL (BẬT TẮT BẰNG PHÍM P) -->
+        <aside id="presenter-panel" class="hidden w-96 bg-slate-900 border-l border-slate-800 p-6 flex-col justify-between overflow-y-auto flex-shrink-0 z-40 text-left">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <span class="text-xs font-bold text-sky-400 uppercase tracking-widest flex items-center gap-1.5">
+                        <i class="fa-solid fa-microphone"></i> Kịch Bản Diễn Giả
+                    </span>
+                    <button onclick="togglePresenterNotes()" class="text-slate-400 hover:text-white text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="p-3 bg-blue-950/40 border border-blue-800/60 rounded-xl space-y-1">
+                    <span class="text-[11px] font-bold text-sky-300 block uppercase">Mẹo Sân Khấu (Stage Tip):</span>
+                    <p id="note-tip" class="text-xs text-blue-100 italic leading-relaxed"></p>
+                </div>
+
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-amber-300 uppercase block">Lời Dẫn Diễn Giả (Speaker Script):</span>
+                    <div id="note-content" class="text-xs sm:text-sm text-slate-200 leading-relaxed font-sans whitespace-pre-line bg-slate-950 p-4 rounded-xl border border-slate-800 max-h-[60vh] overflow-y-auto"></div>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 text-[11px] text-slate-500 flex justify-between">
+                <span>Phím tắt: [←] Trước • [→] Sau</span>
+                <span>[P] Bật/Tắt Ghi Chú</span>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Bottom Controls Bar -->
+    <footer class="w-full bg-slate-900 border-t border-slate-800 px-6 py-2.5 flex justify-between items-center text-xs text-slate-400 flex-shrink-0">
+        <div class="flex items-center gap-4">
+            <span>Dùng phím mũi tên <b>← / →</b> hoặc bấm nút để chuyển slide</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="prevSlide()" class="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg border border-slate-700 font-bold flex items-center gap-1.5 transition">
+                <i class="fa-solid fa-arrow-left"></i> Slide Trước
+            </button>
+            <button onclick="nextSlide()" class="px-5 py-1.5 bg-[#0267B1] hover:bg-sky-600 text-white rounded-lg font-bold flex items-center gap-1.5 transition shadow">
+                Slide Kế Tiếp <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- SCRIPT CHUYỂN SLIDE VÀ KỊCH BẢN DIỄN GIẢ -->
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 16;
+
+        function updateSlide() {
+            // Ẩn tất cả các slide
+            const slides = document.querySelectorAll('#slides-viewport section');
+            slides.forEach(s => {
+                s.classList.remove('slide-active');
+                s.classList.add('slide-hidden');
+            });
+
+            // Hiện slide hiện tại
+            const activeSlide = document.querySelector(`[data-slide="${currentSlide}"]`);
+            if (activeSlide) {
+                activeSlide.classList.remove('slide-hidden');
+                activeSlide.classList.add('slide-active');
+
+                // Cập nhật Speaker Notes
+                const note = activeSlide.getAttribute('data-note') || 'Không có ghi chú cho slide này.';
+                const tip = activeSlide.getAttribute('data-tip') || 'Giữ phong thái tự tin, giao tiếp mắt với học sinh.';
+                document.getElementById('note-content').innerText = note;
+                document.getElementById('note-tip').innerText = tip;
+            }
+
+            // Cập nhật số trang
+            document.getElementById('slide-indicator').innerText = `Slide ${currentSlide} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        function togglePresenterNotes() {
+            const panel = document.getElementById('presenter-panel');
+            panel.classList.toggle('hidden');
+            panel.classList.toggle('flex');
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {});
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // Bắt sự kiện bàn phím
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                prevSlide();
+            } else if (e.key === 'p' || e.key === 'P') {
+                togglePresenterNotes();
+            } else if (e.key === 'f' || e.key === 'F') {
+                toggleFullScreen();
+            }
+        });
+
+        // Khởi tạo slide đầu tiên
+        updateSlide();
+    </script>
+</body>
+</html>

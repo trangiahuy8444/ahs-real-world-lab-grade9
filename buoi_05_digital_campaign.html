@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi" class="w-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 5: Thiết Kế Poster & Tạo Mã QR Vĩnh Viễn Trên iPad | Real World Lab Khối 9</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, kbd, pre { font-family: 'JetBrains Mono', monospace; }
+        .touch-action-manipulation { touch-action: manipulation; }
+    </style>
+</head>
+<body class="w-full min-h-screen bg-[#F0F7FD] text-slate-800 antialiased flex flex-col m-0 p-0">
+
+    <!-- Header Tràn Viền Chuẩn Á Châu -->
+    <header class="w-full bg-[#0267B1] text-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+                <div class="bg-white p-2 rounded-xl shadow flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo_asian_school.png" alt="Logo Trường Quốc Tế Á Châu" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/0267B1/FFFFFF?text=ASIAN+SCHOOL';">
+                </div>
+                <div>
+                    <span class="bg-white text-[#0267B1] text-xs px-2.5 py-0.5 rounded font-extrabold uppercase tracking-wider shadow-sm">Real World Lab Khối 9 • Buổi 5</span>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1">
+                        Hướng Dẫn Thiết Kế Poster A4 & Tạo Mã QR Vĩnh Viễn Bằng iPad
+                    </h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Về Cổng Lộ Trình
+                </a>
+                <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium flex items-center gap-2">
+                    <i class="fa-brands fa-apple text-sky-200"></i>
+                    <span>Tối Ưu 100% Cho iPad (Web Online)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full px-6 lg:px-12 py-8 flex-grow space-y-10">
+
+        <!-- Banner Thử Thách Của Buổi Học -->
+        <section class="w-full bg-gradient-to-r from-[#0C3860] via-[#1A5493] to-[#0267B1] text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-3">
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-amber-400 text-slate-900 rounded-full text-xs font-black uppercase tracking-wider">Thử Thách Của Buổi Học</span>
+                <span class="text-xs text-sky-200">Buổi 5: Digital Campaign (Tháng 2/2027)</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black">
+                "Nội dung số của nhóm có thể góp phần thay đổi một hành vi thực tế của học sinh trong trường hoặc cộng đồng không?"
+            </h2>
+            <div class="text-xs sm:text-sm text-blue-100 leading-relaxed pt-1">
+                <b>Nguyên tắc kỹ thuật:</b> Thiết kế Poster khổ A4 dọc trên Canva Web. Tích hợp mã QR dẫn thẳng đến Website nhóm và tạo bằng công cụ Canva (miễn phí, không bao giờ hết hạn).<br>
+                <b>Yêu cầu sản phẩm nộp:</b> 01 Tệp Poster khổ A4 dọc (định dạng <code>.pdf</code> bản in hoặc <code>.png</code> chất lượng cao) có gắn Mã QR hoạt động tốt.
+            </div>
+        </section>
+
+        <!-- PHẦN 1: BỘ CÔNG CỤ ONLINE TRÊN IPAD -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-4">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">1</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-toolbox text-[#0267B1]"></i> Công Cụ Online Sử Dụng Trực Tiếp Trên iPad
+                    </h3>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm my-3">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead class="bg-[#0C3860] text-white">
+                        <tr>
+                            <th class="p-3 font-bold">Công Cụ Online</th>
+                            <th class="p-3 font-bold">Địa Chỉ Truy Cập (Safari iPad)</th>
+                            <th class="p-3 font-bold">Mục Đích Thao Tác Kỹ Thuật</th>
+                            <th class="p-3 font-bold">Lợi Thế & Lưu Ý Kỹ Thuật</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-paintbrush text-rose-500 mr-2"></i>Canva Poster Web
+                            </td>
+                            <td class="p-3 font-mono text-xs text-blue-700">
+                                <a href="https://www.canva.com" target="_blank" class="hover:underline">canva.com</a>
+                            </td>
+                            <td class="p-3">Dàn trang Infographic/Poster truyền thông khổ A4 dọc (21 x 29.7 cm), xuất file PDF in ấn sắc nét.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Kéo thả đồ họa mượt mà, thư viện biểu tượng phong phú.</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-qrcode text-indigo-600 mr-2"></i>Canva QR Code Generator
+                            </td>
+                            <td class="p-3 font-mono text-xs text-slate-600">Tính năng tích hợp trong Canva Apps</td>
+                            <td class="p-3">Tạo mã QR trực tiếp gắn link Website Buổi 4 để người xem dùng điện thoại quét vào xem dự án.</td>
+                            <td class="p-3 text-emerald-700 font-bold">Vĩnh viễn không hết hạn (Không dùng các web tạo mã QR ngoài bị khóa sau 14 ngày).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Khung Hình Chụp Thực Tế iPad: Mục Ứng Dụng Canva Tạo QR -->
+            <div class="mt-4 p-4 bg-slate-50 border border-dashed border-slate-300 rounded-xl">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-camera text-[#0267B1]"></i> Vị Trí Chụp Màn Hình Minh Họa Thực Tế (Trên iPad)
+                    </span>
+                    <span class="text-[11px] bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded font-bold">Hình 5.1 • Mục Ứng Dụng (Apps) Canva trên Safari iPad</span>
+                </div>
+                <div class="w-full h-48 bg-slate-200/70 border border-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 text-slate-500">
+                    <i class="fa-solid fa-qrcode text-4xl text-slate-400 mb-2"></i>
+                    <p class="text-xs font-bold text-slate-700">Khung hiển thị thanh công cụ bên trái của Canva mục "Ứng dụng" gõ từ khóa "Mã QR"</p>
+                    <p class="text-[11px] text-slate-500 mt-1 max-w-lg">
+                        <b>Hướng dẫn chụp:</b> Mở thiết kế trên Canva Safari iPad → Chạm biểu tượng <b>Ứng dụng (Apps)</b> ở menu bên trái → Gõ tìm <b>QR Code</b> → Chụp lại màn hình hiển thị ô dán link URL.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN 2: QUY TRÌNH THAO TÁC CÔNG CỤ THIẾT KẾ POSTER & QR (4 BƯỚC) -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-8">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">2</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-[#0267B1]"></i> Quy Trình 4 Bước Thao Tác Kỹ Thuật Thiết Kế Poster A4
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Xây dựng ấn phẩm truyền thông trực quan có thể in ấn và dán tại bảng tin</p>
+                </div>
+            </div>
+
+            <!-- BƯỚC 1: KHỞI TẠO KHUNG POSTER DỌC A4 -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-[#0267B1] rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-[#0267B1] text-white rounded-lg flex items-center justify-center text-xs font-black">1</span>
+                        Khởi Tạo Khung Khổ Chuẩn Áp Phích A4 Dọc (21 x 29.7 cm)
+                    </h4>
+                    <span class="text-xs font-semibold text-slate-500 bg-white px-2.5 py-1 rounded-md border border-slate-200">Khổ In Chuẩn</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Mở Safari trên iPad truy cập <code class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">canva.com</code>.</p>
+                    <p>• Tại ô tìm kiếm, gõ từ khóa <b>"Áp phích dọc"</b> hoặc <b>"Poster (Portrait 21 x 29.7 cm)"</b>.</p>
+                    <p>• Đặt tên tệp theo quy chuẩn: <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_PosterA4</code>.</p>
+                </div>
+            </div>
+
+            <!-- BƯỚC 2: BỐ CỤC 3 TẦNG THỊ GIÁC -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-sky-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-sky-500 text-white rounded-lg flex items-center justify-center text-xs font-black">2</span>
+                        Bố Cục 3 Tầng Thị Giác (Visual Hierarchy) Rõ Ràng
+                    </h4>
+                    <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200">Nguyên Tắc Thiết Kế</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+                    <div class="p-3 bg-white rounded-xl border border-slate-200">
+                        <span class="font-extrabold text-[#0267B1] text-sm block mb-1">Tầng 1 (Trên Cùng): Tiêu Đề Bắt Mắt & Logo Nhóm</span>
+                        <p class="text-xs text-slate-600">Chèn Logo nhóm ở góc trên bên trái. Đặt tiêu đề chiến dịch thật to (Ví dụ: <i>"ĐỪNG ĐỂ ĐIỆN THOẠI CƯỚP ĐI GIẤC NGỦ CỦA BẠN!"</i>), font chữ dày dặn, dễ đọc từ khoảng cách 2 mét.</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-xl border border-slate-200">
+                        <span class="font-extrabold text-sky-600 text-sm block mb-1">Tầng 2 (Trung Tâm): Infographic 3 Thông Điệp Cốt Lõi</span>
+                        <p class="text-xs text-slate-600">Dùng 3 biểu tượng minh họa (Icon) từ tab <i>Thành phần (Elements)</i> tương ứng với 3 hành động cụ thể: 1) Tắt màn hình trước khi ngủ 30 phút; 2) Bật chế độ ban đêm lọc ánh sáng xanh; 3) Để điện thoại xa giường ngủ.</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-xl border border-slate-200">
+                        <span class="font-extrabold text-amber-600 text-sm block mb-1">Tầng 3 (Dưới Cùng): Kêu Gọi Hành Động (CTA) & Mã QR</span>
+                        <p class="text-xs text-slate-600">Khu vực đặt Mã QR và dòng hướng dẫn hành động: <i>"Quét mã QR để xem trọn bộ Video 60s & Podcast dự án của nhóm"</i>.</p>
+                    </div>
+                </div>
+
+                <!-- Khung Ảnh Bước 2 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-sky-500"></i> Minh Họa Bước 2: Bố Cục Poster 3 Tầng Trên Canva iPad
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-file-invoice text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Bản thiết kế Poster A4 hoàn thiện với 3 tầng nội dung cân đối</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Toàn cảnh trang thiết kế khổ dọc trên giao diện Canva iPad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 3: TẠO MÃ QR VĨNH VIỄN TRONG CANVA -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-amber-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-amber-500 text-white rounded-lg flex items-center justify-center text-xs font-black">3</span>
+                        Tạo Mã QR Vĩnh Viễn Bằng Canva (Không Dùng Web Rác Bên Ngoài)
+                    </h4>
+                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Kỹ Năng Quan Trọng</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• <b>Cảnh báo:</b> Tránh dùng các trang web tạo QR bên ngoài vì đa phần là link trung gian sẽ bị khóa sau 14 ngày hoặc bắt trả phí.</p>
+                    <p>• <b>Cách làm chuẩn trong Canva:</b></p>
+                    <p class="pl-4 border-l-2 border-amber-400 text-slate-600">
+                        1. Ở thanh menu bên trái màn hình Canva → Chạm vào <b>Ứng dụng (Apps)</b>.<br>
+                        2. Nhập từ khóa <b>"Mã QR"</b> vào thanh tìm kiếm ứng dụng → Chọn công cụ <b>Mã QR</b> chính thức của Canva.<br>
+                        3. Dán đường liên kết (URL) Website Google Sites mà nhóm đã xuất bản ở Buổi 4 vào ô URL.<br>
+                        4. Chạm vào nút tím <b>Tạo mã (Generate QR Code)</b>.
+                    </p>
+                    <p>• Mã QR sắc nét sẽ xuất hiện ngay giữa trang thiết kế. Dùng tay kéo mã QR xuống tầng 3 của Poster, kích thước tối thiểu từ <b>3.5 x 3.5 cm</b> để camera điện thoại dễ quét.</p>
+                </div>
+
+                <!-- Khung Ảnh Bước 3 -->
+                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-image text-amber-500"></i> Minh Họa Bước 3: Hộp Thoại Tạo QR Trong Canva
+                        </span>
+                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
+                    </div>
+                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
+                        <i class="fa-solid fa-qrcode text-3xl mb-1 text-slate-400"></i>
+                        <span class="text-xs font-semibold text-slate-600">Ô nhập URL website và nút Tạo mã QR trực tiếp trong Canva</span>
+                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Cửa sổ tính năng QR Code ở cột trái Canva</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 4: XUẤT TỆP PDF IN ẤN CHẤT LƯỢNG CAO -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-emerald-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-emerald-500 text-white rounded-lg flex items-center justify-center text-xs font-black">4</span>
+                        Xuất File Bản In & Yêu Cầu Định Dạng Nộp
+                    </h4>
+                    <span class="text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">Chuẩn In Ấn Sắc Nét</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Chạm vào nút <b>Chia sẻ (Share)</b> ở góc trên bên phải giao diện Canva.</p>
+                    <p>• Chọn <b>Tải xuống (Download)</b> → Loại tệp chọn <b>PDF Bản in (PDF Print)</b> (đạt độ phân giải 300 DPI, in ra giấy A4 không bị mờ).</p>
+                    <p>• Chạm <b>Tải xuống</b> và xác nhận lưu tệp vào ứng dụng <i>Tệp (Files)</i> trên iPad.</p>
+                    <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 space-y-1.5 text-xs sm:text-sm text-emerald-950 mt-2">
+                        <span class="font-bold text-emerald-800 uppercase block">Tóm Tắt Yêu Cầu Sản Phẩm Nộp:</span>
+                        <p>• <b>Sản phẩm cần nộp:</b> 01 Tệp Poster A4 dọc hoàn chỉnh (bố cục 3 tầng, tiêu đề to rõ, thông điệp ngắn gọn và có Mã QR dẫn đến Website nhóm).</p>
+                        <p>• <b>Định dạng tệp chấp nhận:</b> Tệp in <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.pdf</code> (PDF Bản in chất lượng cao 300 DPI) hoặc tệp ảnh <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.png</code>.</p>
+                        <p>• <b>Quy cách đặt tên tệp:</b> <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_PosterA4.pdf</code> (Ví dụ: <code>9A1_Team02_PosterA4.pdf</code>).</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Thanh Điều Hướng Chuyển Buổi -->
+        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-slate-200">
+            <a href="buoi_04_website.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-arrow-left"></i> Buổi 4: Tạo Website Dự Án
+            </a>
+            <a href="index.html" class="w-full sm:w-auto px-6 py-3 bg-[#0267B1] hover:bg-[#0C3860] text-white rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-house"></i> Về Cổng Lộ Trình
+            </a>
+            <a href="buoi_06_creator_showcase.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                Buổi 6: Creator Showcase & Báo Cáo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer Chuẩn Á Châu -->
+    <footer class="w-full bg-[#0C3860] text-white py-6 border-t border-blue-900 mt-12">
+        <div class="w-full px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-blue-200">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-[#0267B1] text-base"></i>
+                <span>Tổ Tin học • Trường Quốc tế Á Châu (Asian School) — Năm học 2026–2027</span>
+            </div>
+            <div>Học liệu số Real World Lab — Tối ưu hóa 100% cho iPad và công cụ Web Online</div>
+        </div>
+    </footer>
+
+
+    <!-- MODAL LIGHTBOX XEM ẢNH FULL MÀN HÌNH CHUẨN Á CHÂU -->
+    <div id="image-lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-300" onclick="closeLightbox(event)">
+        <div class="w-full max-w-6xl flex justify-between items-center mb-3 px-2 text-white">
+            <span id="lightbox-title" class="text-sm sm:text-base font-bold text-sky-300 tracking-wide flex items-center gap-2">
+                <i class="fa-solid fa-image text-[#0267B1]"></i> <span></span>
+            </span>
+            <button onclick="closeLightboxDirect()" class="bg-white/20 hover:bg-white/30 text-white rounded-full w-9 h-9 flex items-center justify-center transition text-lg" aria-label="Đóng">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="relative max-w-6xl max-h-[85vh] flex items-center justify-center overflow-auto p-2">
+            <img id="lightbox-img" src="" alt="Ảnh phóng to" class="max-w-full max-h-[82vh] object-contain rounded-xl shadow-2xl border border-slate-700 bg-slate-900" onclick="event.stopPropagation()">
+        </div>
+        <div class="mt-3 text-xs text-slate-400 flex items-center gap-2">
+            <i class="fa-regular fa-keyboard"></i> Nhấn <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200">ESC</kbd> hoặc chạm bất kỳ đâu bên ngoài để đóng.
+        </div>
+    </div>
+
+    <!-- SCRIPT ĐIỀU KHIỂN LIGHTBOX PHÓNG TO ẢNH -->
+    <script>
+        function openLightbox(src, title) {
+            const lightbox = document.getElementById("image-lightbox");
+            const img = document.getElementById("lightbox-img");
+            const titleElem = document.querySelector("#lightbox-title span");
+            img.src = src;
+            titleElem.textContent = title;
+            lightbox.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLightboxDirect() {
+            const lightbox = document.getElementById("image-lightbox");
+            lightbox.classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === "image-lightbox") {
+                closeLightboxDirect();
+            }
+        }
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                closeLightboxDirect();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi" class="w-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 1: Thu Âm & Biên Tập Podcast Online Trên iPad | Real World Lab Khối 9</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, kbd, pre { font-family: 'JetBrains Mono', monospace; }
+        .touch-action-manipulation { touch-action: manipulation; }
+    </style>
+</head>
+<body class="w-full min-h-screen bg-[#F0F7FD] text-slate-800 antialiased flex flex-col m-0 p-0">
+
+    <!-- Header Tràn Viền Chuẩn Á Châu -->
+    <header class="w-full bg-[#0267B1] text-white shadow-md sticky top-0 z-50">
+        <div class="w-full px-6 lg:px-12 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4 w-full sm:w-auto">
+                <div class="bg-white p-2 rounded-xl shadow flex items-center justify-center flex-shrink-0">
+                    <img src="assets/logo_asian_school.png" alt="Logo Trường Quốc Tế Á Châu" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/120x60/0267B1/FFFFFF?text=ASIAN+SCHOOL';">
+                </div>
+                <div>
+                    <span class="bg-white text-[#0267B1] text-xs px-2.5 py-0.5 rounded font-extrabold uppercase tracking-wider shadow-sm">Real World Lab Khối 9 • Buổi 1</span>
+                    <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1">
+                        Hướng Dẫn Thu Âm & Ghép Nhạc Podcast Online Bằng iPad
+                    </h1>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-arrow-left"></i> Về Cổng Lộ Trình
+                </a>
+                <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium flex items-center gap-2">
+                    <i class="fa-brands fa-apple text-sky-200"></i>
+                    <span>Tối Ưu 100% Cho iPad (Web Online)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full px-6 lg:px-12 py-8 flex-grow space-y-10">
+
+        <!-- Banner Thử Thách Của Buổi Học -->
+        <section class="w-full bg-gradient-to-r from-[#0C3860] via-[#1A5493] to-[#0267B1] text-white p-6 sm:p-8 rounded-2xl shadow-md space-y-3">
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-amber-400 text-slate-900 rounded-full text-xs font-black uppercase tracking-wider">Thử Thách Của Buổi Học</span>
+                <span class="text-xs text-sky-200">Buổi 1: Podcast (Tháng 10/2026)</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black">
+                "Làm thế nào để khiến một học sinh cùng độ tuổi sẵn sàng lắng nghe thông điệp của nhóm trong 2–3 phút?"
+            </h2>
+            <div class="text-xs sm:text-sm text-blue-100 leading-relaxed pt-1">
+                <b>Công cụ online:</b> Dùng trình duyệt Safari trên iPad truy cập các trang web miễn phí (không cần cài đặt app, không cần tài khoản).<br>
+                <b>Yêu cầu sản phẩm nộp:</b> 01 tệp âm thanh hoàn chỉnh của nhóm (định dạng <code>.mp3</code> hoặc <code>.mp4</code>, thời lượng 2–3 phút).
+            </div>
+        </section>
+
+        <!-- PHẦN 1: BỘ CÔNG CỤ ONLINE DÀNH CHO IPAD -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-4">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">1</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-toolbox text-[#0267B1]"></i> Công Cụ Online Sử Dụng Trực Tiếp Trên iPad
+                    </h3>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm my-3">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead class="bg-[#0C3860] text-white">
+                        <tr>
+                            <th class="p-3 font-bold">Công Cụ Online</th>
+                            <th class="p-3 font-bold">Địa Chỉ Truy Cập (Safari iPad)</th>
+                            <th class="p-3 font-bold">Mục Đích Thao Tác Kỹ Thuật</th>
+                            <th class="p-3 font-bold">Lợi Thế Khi Dùng Trên iPad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-microphone-lines text-rose-500 mr-2"></i>Online Voice Recorder
+                            </td>
+                            <td class="p-3 font-mono text-xs text-blue-700">
+                                <a href="https://online-voice-recorder.com" target="_blank" class="hover:underline">online-voice-recorder.com</a>
+                            </td>
+                            <td class="p-3">Thu âm giọng đọc kịch bản qua micro của iPad, cắt xén 2 đầu loại bỏ khoảng lặng/tiếng thở thừa và lưu file MP3.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Chạy trực tiếp trên Safari iPad, giao diện nút to dễ bấm cảm ứng, không cần đăng nhập.</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-music text-purple-600 mr-2"></i>Canva Video & Audio Web
+                            </td>
+                            <td class="p-3 font-mono text-xs text-blue-700">
+                                <a href="https://www.canva.com" target="_blank" class="hover:underline">canva.com</a>
+                            </td>
+                            <td class="p-3">Tạo thiết kế <b>Video</b> để mở dòng thời gian (Timeline) âm thanh, lồng nhạc nền Lo-fi, hạ âm lượng nền 15-20% và áp dụng hiệu ứng Fade Out.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Kho nhạc bản quyền miễn phí khổng lồ, kéo thả timeline trực quan bằng ngón tay.</td>
+                        </tr>
+                        <tr class="hover:bg-blue-50/50">
+                            <td class="p-3 font-bold text-[#0267B1]">
+                                <i class="fa-solid fa-folder-open text-amber-500 mr-2"></i>Ứng Dụng Tệp (Files)
+                            </td>
+                            <td class="p-3 font-mono text-xs text-slate-600">Ứng dụng có sẵn trên iPadOS</td>
+                            <td class="p-3">Quản lý file âm thanh trong thư mục <i>Tải về (Downloads)</i> và nộp trực tiếp lên Canvas LMS.</td>
+                            <td class="p-3 text-emerald-700 font-medium">Lưu trữ cục bộ an toàn, hỗ trợ nghe thử lại trước khi bấm nộp bài.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PHẦN 2: QUY TRÌNH THAO TÁC CÔNG CỤ (4 BƯỚC THỰC HIỆN KÈM ẢNH CHỤP THỰC TẾ) -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-8">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-[#0267B1] text-white flex items-center justify-center font-black text-lg shadow-sm">2</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-[#0267B1]"></i> Quy Trình Thao Tác Kỹ Thuật (Kèm Ảnh Chụp Màn Hình iPad Thực Tế)
+                    </h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Thực hiện tuần tự 4 bước trên trình duyệt Safari của iPad</p>
+                </div>
+            </div>
+
+            <!-- BƯỚC 1: THU ÂM TRỰC TUYẾN -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-[#0267B1] rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-[#0267B1] text-white rounded-lg flex items-center justify-center text-xs font-black">1</span>
+                        Thu Âm Kịch Bản Giọng Đọc Bằng Online Voice Recorder
+                    </h4>
+                    <span class="text-xs font-semibold text-slate-500 bg-white px-2.5 py-1 rounded-md border border-slate-200">Trực tuyến trên Safari</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Mở trình duyệt <b>Safari</b> trên iPad và truy cập: <code class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">online-voice-recorder.com</code>.</p>
+                    <p>• Nhấn vào <b>Nút tròn đỏ có biểu tượng Micro</b> ở giữa màn hình để bắt đầu thu âm.</p>
+                    <p>• <i>Nếu Safari hiện thông báo hỏi quyền truy cập:</i> Chạm vào <b>"Cho phép" (Allow)</b> để cấp quyền sử dụng Micro iPad.</p>
+                    <p>• Đọc kịch bản đã có sẵn với giọng điệu tự nhiên, rõ ràng, khoảng cách từ miệng đến cạnh dưới của iPad khoảng <b>15–20 cm</b>.</p>
+                    <p>• Khi đọc xong toàn bộ kịch bản, chạm vào nút <b>Tạm dừng / Dừng (Stop)</b> hình vuông màu xanh/đỏ.</p>
+                </div>
+
+                <!-- Hình Ảnh Thực Tế Bước 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                    <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <span class="text-xs font-bold text-[#0C3860] block mb-2 flex items-center gap-1.5">
+                            <i class="fa-solid fa-camera text-[#0267B1]"></i> Hình 1.1: Giao diện web Online Voice Recorder (Nút Micro đỏ)
+                        </span>
+                        <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_01_voice_recorder_home.png', 'Hình 1.1: Giao diện web Online Voice Recorder (Nút Micro đỏ)')">
+                            <img src="assets/b1_01_voice_recorder_home.png" alt="Ảnh thực tế Online Voice Recorder nút thu âm đỏ" class="w-full h-auto max-h-64 object-contain transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2.5 py-1 rounded-lg backdrop-blur-sm flex items-center gap-1.5 shadow pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Bấm phóng to
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <span class="text-xs font-bold text-[#0C3860] block mb-2 flex items-center gap-1.5">
+                            <i class="fa-solid fa-camera text-[#0267B1]"></i> Hình 1.2: Trạng thái đang thu âm giọng đọc và thanh sóng âm
+                        </span>
+                        <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_02_voice_recorder_recording.png', 'Hình 1.2: Trạng thái đang thu âm giọng đọc và thanh sóng âm')">
+                            <img src="assets/b1_02_voice_recorder_recording.png" alt="Ảnh thực tế đang thu âm sóng âm thanh" class="w-full h-auto max-h-64 object-contain transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2.5 py-1 rounded-lg backdrop-blur-sm flex items-center gap-1.5 shadow pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Bấm phóng to
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 2: CẮT XÉN ĐOẠN ĐẦU ĐUÔI & LƯU TỆP MP3 -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-sky-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-sky-500 text-white rounded-lg flex items-center justify-center text-xs font-black">2</span>
+                        Cắt Xén Khoảng Lặng Thừa & Lưu Tệp MP3 Về Ứng Dụng Tệp
+                    </h4>
+                    <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200">Cắt xén cảm ứng</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
+                    <p>• Sau khi bấm Stop, màn hình sẽ hiển thị biểu đồ sóng âm thanh của đoạn vừa thu.</p>
+                    <p>• Dùng ngón tay chạm và kéo <b>2 thanh màu xanh lam ở 2 đầu</b>:</p>
+                    <p class="pl-4 border-l-2 border-sky-400 text-slate-600">
+                        - <b>Đầu bên trái:</b> Kéo sát vào vị trí bắt đầu phát ra tiếng nói (loại bỏ tiếng thở dài hoặc tiếng bấm nút).<br>
+                        - <b>Đầu bên phải:</b> Kéo sát vào âm tiết cuối cùng của câu kết.
+                    </p>
+                    <p>• Bấm nút <b>Play (Phát thử)</b> để nghe lại xem đoạn cắt đã mượt mà chưa.</p>
+                    <p>• Chạm vào nút <b>Lưu (Save)</b> ở góc dưới bên phải → Safari iPad sẽ hiện hộp thoại thông báo tải về → Chọn <b>Tải về (Download)</b> để lưu tệp âm thanh vào ứng dụng <i>Tệp (Files) → Tải về (Downloads)</i>.</p>
+                </div>
+
+                <!-- Hình Ảnh Thực Tế Bước 2 -->
+                <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold text-[#0C3860] block mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-camera text-sky-500"></i> Hình 1.3: Thao tác kéo thanh xanh cắt gọt khoảng lặng & nút Save lưu file MP3
+                    </span>
+                    <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_03_voice_recorder_trim_save.png', 'Hình 1.3: Thao tác kéo thanh xanh cắt gọt khoảng lặng & nút Save lưu file MP3')">
+                        <img src="assets/b1_03_voice_recorder_trim_save.png" alt="Ảnh thực tế cắt xén khoảng lặng và nút Save" class="w-full h-auto max-h-72 object-contain transition-transform duration-300 group-hover:scale-105">
+                        <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2.5 py-1 rounded-lg backdrop-blur-sm flex items-center gap-1.5 shadow pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> Bấm phóng to
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 3: LỒNG NHẠC NỀN TRÊN CANVA (BẮT BUỘC TẠO THIẾT KẾ VIDEO) -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-purple-600 rounded-r-2xl space-y-5">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-purple-600 text-white rounded-lg flex items-center justify-center text-xs font-black">3</span>
+                        Lồng Nhạc Nền Miễn Phí Bản Quyền Trên Canva (Bắt Buộc Chọn Dạng Video)
+                    </h4>
+                    <span class="text-xs font-semibold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200">Kỹ Năng Quan Trọng</span>
+                </div>
+
+                <!-- ALERT QUAN TRỌNG: PHẢI CHỌN THIẾT KẾ DẠNG VIDEO -->
+                <div class="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl space-y-2">
+                    <div class="flex items-center gap-2 text-amber-900 font-extrabold text-xs sm:text-sm">
+                        <i class="fa-solid fa-triangle-exclamation text-amber-600 text-base"></i>
+                        LƯU Ý KỸ THUẬT QUAN TRỌNG: TẠI SAO PHẢI CHỌN THIẾT KẾ "VIDEO"?
+                    </div>
+                    <p class="text-xs sm:text-sm text-amber-950 leading-relaxed">
+                        Trên Canva, nếu bạn chọn thiết kế ảnh tĩnh (như Áp phích, Tài liệu Docs, Bài đăng thông thường) thì <b>KHÔNG THỂ</b> tương tác với âm thanh đa kênh. <br>
+                        👉 <b>Bắt buộc:</b> Phải chọn mẫu thiết kế dưới dạng <b>"Video"</b> (hoặc <b>"Video trên thiết bị di động"</b>) thì Canva mới kích hoạt <b>Thanh dòng thời gian (Timeline)</b> ở dưới đáy màn hình, cho phép chèn nhiều track âm thanh, cắt tách nhạc, chỉnh Volume và chỉnh hiệu ứng Fade!
+                    </p>
+                </div>
+
+                <div class="text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+                    <p><b>1. Khởi tạo dự án Video:</b> Mở Safari trên iPad vào <code class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">canva.com</code> → Chạm vào nút tím <b>Tạo thiết kế (Create a design)</b> ở góc trên bên phải → Chọn mục <b>Video</b> hoặc <b>Video trên thiết bị di động (Mobile Video)</b>.</p>
+                    <p><b>2. Tải đoạn thu âm lên (Chọn từ app "Tệp"):</b> Chạm tab <b>Tải lên (Uploads)</b> ở thanh công cụ bên trái → Bấm nút <i>Tải tệp lên</i> → <b>Lưu ý quan trọng:</b> Chọn mục <b>"Chọn tệp" (Browse Files)</b> để duyệt vào ứng dụng <i>Tệp (Files) → Tải về (Downloads)</i> trên iPad (tránh bấm "Thư viện ảnh" vì file ghi âm MP3 nằm trong app Tệp!). File âm thanh sẽ xuất hiện trong tab <i>Âm thanh (Audio)</i> của Canva.</p>
+                    <p class="p-3 bg-amber-50 rounded-xl border border-amber-200 text-amber-950 font-medium">
+                        <b>3. Mẹo tránh bị cắt cụt (Kéo dài thời lượng trang):</b> Mặc định khi tạo mới, trang video của Canva chỉ dài 5 giây. Bạn chạm vào cạnh bên phải của trang video dưới dòng Timeline, <b>kéo dài thời lượng trang ra từ 2.0 đến 3.0 phút</b> (khớp với độ dài bài podcast của nhóm) thì âm thanh mới phát trọn vẹn mà không bị ngắt quãng giữa chừng!
+                    </p>
+                    <p><b>4. Thêm nhạc nền Lo-fi:</b> Vào tab <b>Thành phần (Elements)</b> hoặc tab <b>Âm thanh (Audio)</b> → Gõ từ khóa tìm kiếm: <code>lofi beats chill</code> hoặc <code>background music podcast</code> → Chạm chọn 1 bài nhạc êm dịu, không lời.</p>
+                    <p><b>5. Cân bằng âm lượng (Volume 15–20%):</b> Chạm vào thanh nhạc nền màu tím dưới Timeline → Chạm vào biểu tượng <b>Âm lượng (Volume)</b> trên thanh công cụ → Kéo thanh trượt xuống mức <b>15% – 20%</b> (đảm bảo giọng đọc rõ ràng, nhạc nền chỉ thoang thoảng tạo cảm xúc).</p>
+                    <p><b>6. Hiệu ứng mờ dần (Fade Out):</b> Chạm vào thanh nhạc nền → Chọn nút <b>Hiệu ứng âm thanh (Audio Effects)</b> hoặc <b>Mờ (Fade)</b> → Kéo <i>Fade out (Mờ dần khi kết thúc)</i> khoảng <b>2.0 – 3.0 giây</b> để bản podcast kết thúc êm ái, chuyên nghiệp.</p>
+                </div>
+
+                <!-- BỘ ẢNH THỰC TẾ BƯỚC 3 TỪ IPAD -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                    <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-[#0C3860] block flex items-center gap-1.5">
+                            <i class="fa-solid fa-camera text-purple-600"></i> Hình 1.4: Trang chủ Canva trên iPad
+                        </span>
+                        <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_04_canva_home.png', 'Hình 1.4: Trang chủ Canva canva.com trên trình duyệt Safari iPad')">
+                            <img src="assets/b1_04_canva_home.png" alt="Ảnh thực tế trang chủ Canva" class="w-full h-auto max-h-56 object-contain transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1 shadow pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Phóng to
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-slate-500">Mở Safari truy cập canva.com trên iPad.</p>
+                    </div>
+
+                    <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-[#0C3860] block flex items-center gap-1.5">
+                            <i class="fa-solid fa-camera text-purple-600"></i> Hình 1.5: Tạo thiết kế dưới dạng VIDEO
+                        </span>
+                        <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_05_canva_create_video.png', 'Hình 1.5: Tạo thiết kế dưới dạng VIDEO để kích hoạt Timeline âm thanh')">
+                            <img src="assets/b1_05_canva_create_video.png" alt="Ảnh thực tế chọn tạo thiết kế dạng Video" class="w-full h-auto max-h-56 object-contain transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1 shadow pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Phóng to
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-amber-700 font-bold">Bắt buộc chọn "Video" để mở Timeline âm thanh.</p>
+                    </div>
+
+                    <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+                        <span class="text-xs font-bold text-[#0C3860] block flex items-center gap-1.5">
+                            <i class="fa-solid fa-camera text-purple-600"></i> Hình 1.6: Timeline âm thanh, nút Fade & Volume
+                        </span>
+                        <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-100 flex items-center justify-center relative group cursor-zoom-in" onclick="openLightbox('assets/b1_06_canva_audio_timeline.png', 'Hình 1.6: Timeline âm thanh, nút Fade Out và cân chỉnh Âm lượng trên Canva')">
+                            <img src="assets/b1_06_canva_audio_timeline.png" alt="Ảnh thực tế Timeline âm thanh và nút Fade Volume trên Canva" class="w-full h-auto max-h-56 object-contain transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute bottom-2 right-2 bg-slate-900/80 hover:bg-[#0267B1] text-white text-[11px] font-bold px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1 shadow pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Phóng to
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-slate-500">Dòng thời gian hiển thị thanh Âm thanh, Fade, Âm lượng.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BƯỚC 4: XUẤT TỆP ÂM THANH HOÀN CHỈNH & NỘP LMS -->
+            <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-emerald-500 rounded-r-2xl space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
+                        <span class="w-7 h-7 bg-emerald-500 text-white rounded-lg flex items-center justify-center text-xs font-black">4</span>
+                        Xuất Tệp Hoàn Chỉnh & Yêu Cầu Định Dạng Nộp
+                    </h4>
+                    <span class="text-xs font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">Định dạng MP3</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+                    <p>• Sau khi chỉnh sửa âm lượng hoàn tất, chạm vào nút <b>Chia sẻ (Share)</b> ở góc trên bên phải màn hình Canva → Chọn <b>Tải xuống (Download)</b>.</p>
+                    
+                    <!-- HƯỚNG DẪN ĐỊNH DẠNG XUẤT TỆP LINH HOẠT -->
+                    <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-2">
+                        <span class="font-bold text-[#0267B1] text-xs uppercase flex items-center gap-1.5">
+                            <i class="fa-solid fa-file-arrow-down"></i> Tùy Chọn Định Dạng Xuất File (Linh Hoạt Cho Mọi Tài Khoản):
+                        </span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
+                            <div class="p-2.5 bg-white rounded-lg border border-slate-200">
+                                <b class="text-emerald-700 block mb-0.5">Cách 1: Xuất Tệp Âm Thanh MP3</b>
+                                <span>Tại mục <i>Loại tệp (File type)</i>, nếu tài khoản có tùy chọn <b>Âm thanh MP3</b>, chọn định dạng này rồi bấm <b>Tải xuống</b>.</span>
+                            </div>
+                            <div class="p-2.5 bg-white rounded-lg border border-slate-200">
+                                <b class="text-sky-700 block mb-0.5">Cách 2: Xuất Tệp Video MP4 (Khuyên Dùng)</b>
+                                <span>Nếu Canva chỉ hiển thị <b>Video MP4</b>, bạn cứ tải xuống dạng MP4! Canva sẽ tạo 1 video có kèm trọn vẹn giọng đọc và nhạc nền, nộp thẳng lên LMS thầy cô vẫn chấm điểm âm thanh bình thường.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 space-y-1.5 text-xs sm:text-sm text-emerald-950">
+                        <span class="font-bold text-emerald-800 uppercase block">Tóm Tắt Yêu Cầu Sản Phẩm Nộp:</span>
+                        <p>• <b>Sản phẩm cần nộp:</b> 01 tệp âm thanh Podcast hoàn chỉnh (thời lượng 2–3 phút, nói tiếng Anh, có nhạc nền và fade out).</p>
+                        <p>• <b>Định dạng tệp chấp nhận:</b> <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.mp3</code> hoặc <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.mp4</code>.</p>
+                        <p>• <b>Quy cách đặt tên tệp:</b> <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_Podcast.mp3</code> (Ví dụ: <code>9A1_Team02_Podcast.mp3</code> hoặc <code>9A1_Team02_Podcast.mp4</code>).</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PHẦN 3: ĐẶT TÊN TỆP & BẢNG KIỂM TRA CHẤT LƯỢNG -->
+        <section class="w-full bg-white p-6 sm:p-8 lg:p-10 rounded-2xl shadow-sm border border-blue-100 space-y-4">
+            <div class="border-b border-blue-100 pb-3 flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-lg shadow-sm">3</span>
+                <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-[#0C3860] flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-emerald-600"></i> Bảng Kiểm Tra (Checklist) Nghiệm Thu Trước Khi Nộp
+                    </h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2">
+                    <span class="font-bold text-[#0267B1] block">Quy Ước Tên Tệp Chuẩn Á Châu:</span>
+                    <div class="p-2.5 bg-white rounded-lg border border-slate-200">
+                        <code class="text-emerald-700 font-bold">Lop_TenNhom_Podcast.mp3</code>
+                        <span class="text-slate-500 block text-[11px] mt-0.5">Ví dụ: 9A1_Team02_Podcast.mp3</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 italic">* 01 bạn nhóm trưởng đại diện nộp bài cho cả nhóm lên Canvas LMS.</p>
+                </div>
+
+                <div class="p-4 bg-emerald-50/50 rounded-xl border border-emerald-200 space-y-2">
+                    <span class="font-bold text-emerald-800 block">Tiêu Chuẩn Âm Thanh Đạt Điểm Cao:</span>
+                    <ul class="space-y-1.5 text-xs text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Thời lượng chuẩn từ 2 đến 3 phút.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Giọng đọc tiếng Anh to rõ, không lẫn tiếng rè hay tiếng thở mạnh.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Nhạc nền Lo-fi êm dịu, âm lượng 15–20% không đè giọng nói.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Đoạn kết thúc có hiệu ứng Fade Out nhỏ dần mượt mà.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-600"></i> Tệp xuất ra định dạng <b>.mp3</b> hoặc <b>.mp4</b> và phát trơn tru trên iPad.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thanh Điều Hướng Chuyển Buổi -->
+        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-slate-200">
+            <a href="buoi_00_dinh_huong.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-arrow-left"></i> Buổi Định Hướng: Project Brief
+            </a>
+            <a href="index.html" class="w-full sm:w-auto px-6 py-3 bg-[#0267B1] hover:bg-[#0C3860] text-white rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                <i class="fa-solid fa-house"></i> Về Cổng Lộ Trình
+            </a>
+            <a href="buoi_02_video_60s.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                Buổi 2: Dựng Video 60s Online <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer Chuẩn Á Châu -->
+    <footer class="w-full bg-[#0C3860] text-white py-6 border-t border-blue-900 mt-12">
+        <div class="w-full px-6 lg:px-12 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-blue-200">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-[#0267B1] text-base"></i>
+                <span>Tổ Tin học • Trường Quốc tế Á Châu (Asian School) — Năm học 2026–2027</span>
+            </div>
+            <div>Học liệu số Real World Lab — Tối ưu hóa 100% cho iPad và công cụ Web Online</div>
+        </div>
+    </footer>
+
+
+    <!-- MODAL LIGHTBOX XEM ẢNH FULL MÀN HÌNH CHUẨN Á CHÂU -->
+    <div id="image-lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-300" onclick="closeLightbox(event)">
+        <div class="w-full max-w-6xl flex justify-between items-center mb-3 px-2 text-white">
+            <span id="lightbox-title" class="text-sm sm:text-base font-bold text-sky-300 tracking-wide flex items-center gap-2">
+                <i class="fa-solid fa-image text-[#0267B1]"></i> <span></span>
+            </span>
+            <button onclick="closeLightboxDirect()" class="bg-white/20 hover:bg-white/30 text-white rounded-full w-9 h-9 flex items-center justify-center transition text-lg" aria-label="Đóng">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="relative max-w-6xl max-h-[85vh] flex items-center justify-center overflow-auto p-2">
+            <img id="lightbox-img" src="" alt="Ảnh phóng to" class="max-w-full max-h-[82vh] object-contain rounded-xl shadow-2xl border border-slate-700 bg-slate-900" onclick="event.stopPropagation()">
+        </div>
+        <div class="mt-3 text-xs text-slate-400 flex items-center gap-2">
+            <i class="fa-regular fa-keyboard"></i> Nhấn <kbd class="px-2 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-200">ESC</kbd> hoặc chạm bất kỳ đâu bên ngoài để đóng.
+        </div>
+    </div>
+
+    <!-- SCRIPT ĐIỀU KHIỂN LIGHTBOX PHÓNG TO ẢNH -->
+    <script>
+        function openLightbox(src, title) {
+            const lightbox = document.getElementById("image-lightbox");
+            const img = document.getElementById("lightbox-img");
+            const titleElem = document.querySelector("#lightbox-title span");
+            img.src = src;
+            titleElem.textContent = title;
+            lightbox.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeLightboxDirect() {
+            const lightbox = document.getElementById("image-lightbox");
+            lightbox.classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === "image-lightbox") {
+                closeLightboxDirect();
+            }
+        }
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") {
+                closeLightboxDirect();
+            }
+        });
+    </script>
+</body>
+
+</html>
