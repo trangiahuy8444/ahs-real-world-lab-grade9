@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buổi 5: Thiết Kế Poster & Tạo Mã QR Vĩnh Viễn Trên iPad | Real World Lab Khối 9</title>
+    <title>Buổi 5: Thiết Kế Poster & Tạo Mã QR Tĩnh Trên iPad | Real World Lab Khối 9</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -15,6 +15,7 @@
         code, kbd, pre { font-family: 'JetBrains Mono', monospace; }
         .touch-action-manipulation { touch-action: manipulation; }
     </style>
+    <link rel="stylesheet" href="assets/guide-accessibility.css">
 </head>
 <body class="w-full min-h-screen bg-[#F0F7FD] text-slate-800 antialiased flex flex-col m-0 p-0">
 
@@ -28,7 +29,7 @@
                 <div>
                     <span class="bg-white text-[#0267B1] text-xs px-2.5 py-0.5 rounded font-extrabold uppercase tracking-wider shadow-sm">Real World Lab Khối 9 • Buổi 5</span>
                     <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white mt-1">
-                        Hướng Dẫn Thiết Kế Poster A4 & Tạo Mã QR Vĩnh Viễn Bằng iPad
+                        Hướng Dẫn Thiết Kế Poster A4 & Tạo Mã QR Tĩnh Bằng iPad
                     </h1>
                 </div>
             </div>
@@ -38,7 +39,7 @@
                 </a>
                 <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium flex items-center gap-2">
                     <i class="fa-brands fa-apple text-sky-200"></i>
-                    <span>Tối Ưu 100% Cho iPad (Web Online)</span>
+                    <span>Hướng dẫn trên iPad và máy tính</span>
                 </div>
             </div>
         </div>
@@ -57,7 +58,7 @@
                 "Nội dung số của nhóm có thể góp phần thay đổi một hành vi thực tế của học sinh trong trường hoặc cộng đồng không?"
             </h2>
             <div class="text-xs sm:text-sm text-blue-100 leading-relaxed pt-1">
-                <b>Nguyên tắc kỹ thuật:</b> Thiết kế Poster khổ A4 dọc trên Canva Web. Tích hợp mã QR dẫn thẳng đến Website nhóm và tạo bằng công cụ Canva (miễn phí, không bao giờ hết hạn).<br>
+                <b>Nguyên tắc kỹ thuật:</b> Thiết kế Poster khổ A4 dọc trên Canva Web. Tích hợp mã QR dẫn thẳng đến Website nhóm và tạo bằng ứng dụng Mã QR tĩnh của Canva; đường dẫn đích phải còn hoạt động và có quyền xem phù hợp.<br>
                 <b>Yêu cầu sản phẩm nộp:</b> 01 Tệp Poster khổ A4 dọc (định dạng <code>.pdf</code> bản in hoặc <code>.png</code> chất lượng cao) có gắn Mã QR hoạt động tốt.
             </div>
         </section>
@@ -100,28 +101,14 @@
                             </td>
                             <td class="p-3 font-mono text-xs text-slate-600">Tính năng tích hợp trong Canva Apps</td>
                             <td class="p-3">Tạo mã QR trực tiếp gắn link Website Buổi 4 để người xem dùng điện thoại quét vào xem dự án.</td>
-                            <td class="p-3 text-emerald-700 font-bold">Vĩnh viễn không hết hạn (Không dùng các web tạo mã QR ngoài bị khóa sau 14 ngày).</td>
+                            <td class="p-3 text-emerald-700 font-bold">Mã QR tĩnh lưu URL; mã chỉ hữu ích khi URL đích còn tồn tại và người xem có quyền truy cập.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Khung Hình Chụp Thực Tế iPad: Mục Ứng Dụng Canva Tạo QR -->
-            <div class="mt-4 p-4 bg-slate-50 border border-dashed border-slate-300 rounded-xl">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-2">
-                        <i class="fa-solid fa-camera text-[#0267B1]"></i> Vị Trí Chụp Màn Hình Minh Họa Thực Tế (Trên iPad)
-                    </span>
-                    <span class="text-[11px] bg-blue-100 text-[#0267B1] px-2 py-0.5 rounded font-bold">Hình 5.1 • Mục Ứng Dụng (Apps) Canva trên Safari iPad</span>
-                </div>
-                <div class="w-full h-48 bg-slate-200/70 border border-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 text-slate-500">
-                    <i class="fa-solid fa-qrcode text-4xl text-slate-400 mb-2"></i>
-                    <p class="text-xs font-bold text-slate-700">Khung hiển thị thanh công cụ bên trái của Canva mục "Ứng dụng" gõ từ khóa "Mã QR"</p>
-                    <p class="text-[11px] text-slate-500 mt-1 max-w-lg">
-                        <b>Hướng dẫn chụp:</b> Mở thiết kế trên Canva Safari iPad → Chạm biểu tượng <b>Ứng dụng (Apps)</b> ở menu bên trái → Gõ tìm <b>QR Code</b> → Chụp lại màn hình hiển thị ô dán link URL.
-                    </p>
-                </div>
-            </div>
+            <figure class="rwl-guide-figure my-4 p-4 bg-slate-50 border border-blue-200 rounded-xl"><button type="button" class="w-full cursor-zoom-in" aria-label="Phóng to: Bước 1: Tạo thiết kế → tìm Tài liệu A4 → chọn Tài liệu (A4, dọc), kích thước 21 × 29,7 cm. Không dùng nhầm mẫu poster kích thước lớn." onclick="openLightbox('assets/guide_poster_01_a4.jpg', this.nextElementSibling.textContent)"><img src="assets/guide_poster_01_a4.jpg" alt="Bước 1: Tạo thiết kế → tìm Tài liệu A4 → chọn Tài liệu (A4, dọc), kích thước 21 × 29,7 cm. Không dùng nhầm mẫu poster kích thước lớn." loading="lazy" class="w-full h-auto rounded-lg border border-slate-200"></button><figcaption class="mt-3 text-sm text-slate-700">Bước 1: Tạo thiết kế → tìm Tài liệu A4 → chọn Tài liệu (A4, dọc), kích thước 21 × 29,7 cm. Không dùng nhầm mẫu poster kích thước lớn.<br><b>Ảnh chụp giao diện web trên máy tính, ngày 06/11/2026.</b> Trên iPad, vị trí nút có thể khác; tìm theo tên chức năng. Chạm ảnh để phóng to.</figcaption></figure>
         </section>
 
         <!-- PHẦN 2: QUY TRÌNH THAO TÁC CÔNG CỤ THIẾT KẾ POSTER & QR (4 BƯỚC) -->
@@ -147,7 +134,7 @@
                 </div>
                 <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
                     <p>• Mở Safari trên iPad truy cập <code class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded">canva.com</code>.</p>
-                    <p>• Tại ô tìm kiếm, gõ từ khóa <b>"Áp phích dọc"</b> hoặc <b>"Poster (Portrait 21 x 29.7 cm)"</b>.</p>
+                    <p>• Tại ô tìm kiếm, chọn <b>Tạo thiết kế</b>, tìm <b>Tài liệu A4</b>, chọn <b>Tài liệu (A4, dọc)</b> kích thước <b>21 × 29,7 cm</b>.</p>
                     <p>• Đặt tên tệp theo quy chuẩn: <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_PosterA4</code>.</p>
                 </div>
             </div>
@@ -177,59 +164,35 @@
                 </div>
 
                 <!-- Khung Ảnh Bước 2 -->
-                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
-                            <i class="fa-solid fa-image text-sky-500"></i> Minh Họa Bước 2: Bố Cục Poster 3 Tầng Trên Canva iPad
-                        </span>
-                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
-                    </div>
-                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
-                        <i class="fa-solid fa-file-invoice text-3xl mb-1 text-slate-400"></i>
-                        <span class="text-xs font-semibold text-slate-600">Bản thiết kế Poster A4 hoàn thiện với 3 tầng nội dung cân đối</span>
-                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Toàn cảnh trang thiết kế khổ dọc trên giao diện Canva iPad</span>
-                    </div>
-                </div>
+                <aside class="my-4 p-4 bg-blue-50 border border-blue-200 rounded-xl"><h4 class="font-bold text-[#0267B1]">Bước 2 — Kiểm tra bố cục trước khi thêm QR</h4><p>Chia trang A4 thành 3 vùng: trên là tiêu đề và logo; giữa là 3 hành động cụ thể; dưới là lời kêu gọi và mã QR. Chừa khoảng trắng quanh mã, không đặt chữ hoặc hình đè lên mã. Các thông tin sức khỏe cần có nguồn đã kiểm chứng ở buổi 3.</p></aside>
             </div>
 
-            <!-- BƯỚC 3: TẠO MÃ QR VĨNH VIỄN TRONG CANVA -->
+            <!-- BƯỚC 3: TẠO MÃ QR TĨNH TRONG CANVA -->
             <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-amber-500 rounded-r-2xl space-y-4">
                 <div class="flex items-center justify-between">
                     <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
                         <span class="w-7 h-7 bg-amber-500 text-white rounded-lg flex items-center justify-center text-xs font-black">3</span>
-                        Tạo Mã QR Vĩnh Viễn Bằng Canva (Không Dùng Web Rác Bên Ngoài)
+                        Tạo Mã QR Tĩnh Bằng Canva (Do Canva Tạo)
                     </h4>
                     <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Kỹ Năng Quan Trọng</span>
                 </div>
                 <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
-                    <p>• <b>Cảnh báo:</b> Tránh dùng các trang web tạo QR bên ngoài vì đa phần là link trung gian sẽ bị khóa sau 14 ngày hoặc bắt trả phí.</p>
+                    <p>• <b>Cảnh báo:</b> Không chọn nhầm Mã QR động hoặc dịch vụ dùng thử. Dùng Mã QR tĩnh do Canva tạo; kiểm tra URL đích còn hoạt động trước khi in.</p>
                     <p>• <b>Cách làm chuẩn trong Canva:</b></p>
                     <p class="pl-4 border-l-2 border-amber-400 text-slate-600">
                         1. Ở thanh menu bên trái màn hình Canva → Chạm vào <b>Ứng dụng (Apps)</b>.<br>
-                        2. Nhập từ khóa <b>"Mã QR"</b> vào thanh tìm kiếm ứng dụng → Chọn công cụ <b>Mã QR</b> chính thức của Canva.<br>
-                        3. Dán đường liên kết (URL) Website Google Sites mà nhóm đã xuất bản ở Buổi 4 vào ô URL.<br>
+                        2. Nhập <b>QR Code</b> → tìm <b>Mã QR tĩnh</b>, kiểm tra dòng <b>Tạo bởi Canva</b>. Giáo viên chuẩn bị quyền dùng ứng dụng trước giờ học; học sinh không tự đồng ý điều khoản hoặc đăng ký gói trả phí.<br>
+                        3. Sau khi giáo viên đã chuẩn bị ứng dụng, dán đường liên kết (URL) Website Google Sites mà nhóm đã xuất bản ở Buổi 4 vào ô URL.<br>
                         4. Chạm vào nút tím <b>Tạo mã (Generate QR Code)</b>.
                     </p>
                     <p>• Mã QR sắc nét sẽ xuất hiện ngay giữa trang thiết kế. Dùng tay kéo mã QR xuống tầng 3 của Poster, kích thước tối thiểu từ <b>3.5 x 3.5 cm</b> để camera điện thoại dễ quét.</p>
                 </div>
 
                 <!-- Khung Ảnh Bước 3 -->
-                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
-                            <i class="fa-solid fa-image text-amber-500"></i> Minh Họa Bước 3: Hộp Thoại Tạo QR Trong Canva
-                        </span>
-                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
-                    </div>
-                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
-                        <i class="fa-solid fa-qrcode text-3xl mb-1 text-slate-400"></i>
-                        <span class="text-xs font-semibold text-slate-600">Ô nhập URL website và nút Tạo mã QR trực tiếp trong Canva</span>
-                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Cửa sổ tính năng QR Code ở cột trái Canva</span>
-                    </div>
-                </div>
+                <figure class="rwl-guide-figure my-4 p-4 bg-slate-50 border border-blue-200 rounded-xl"><button type="button" class="w-full cursor-zoom-in" aria-label="Phóng to: Bước 3: Ứng dụng → tìm QR Code → chọn Mã QR tĩnh, kiểm tra nhà phát triển là Canva. Giáo viên chuẩn bị quyền sử dụng ứng dụng trước buổi học; tiếp tục bước nhập URL và tạo mã ở hai ảnh bên dưới." onclick="openLightbox('assets/guide_poster_02_static_qr.jpg', this.nextElementSibling.textContent)"><img src="assets/guide_poster_02_static_qr.jpg" alt="Bước 3: Ứng dụng → tìm QR Code → chọn Mã QR tĩnh, kiểm tra nhà phát triển là Canva. Giáo viên chuẩn bị quyền sử dụng ứng dụng trước buổi học; tiếp tục bước nhập URL và tạo mã ở hai ảnh bên dưới." loading="lazy" class="w-full h-auto rounded-lg border border-slate-200"></button><figcaption class="mt-3 text-sm text-slate-700">Bước 3: Ứng dụng → tìm QR Code → chọn Mã QR tĩnh, kiểm tra nhà phát triển là Canva. Giáo viên chuẩn bị quyền sử dụng ứng dụng trước buổi học; tiếp tục bước nhập URL và tạo mã ở hai ảnh bên dưới.<br><b>Ảnh chụp giao diện web trên máy tính, ngày 06/11/2026.</b> Trên iPad, vị trí nút có thể khác; tìm theo tên chức năng. Chạm ảnh để phóng to.</figcaption></figure>
             </div>
 
-            <!-- BƯỚC 4: XUẤT TỆP PDF IN ẤN CHẤT LƯỢNG CAO -->
+<figure class="rwl-guide-figure my-4 p-4 bg-slate-50 border border-blue-200 rounded-xl"><button type="button" class="w-full cursor-zoom-in" aria-label="Phóng to: Bước 3a: Dán URL website đã xuất bản vào ô URL → kiểm tra đúng địa chỉ → bấm Tạo mã." onclick="openLightbox('assets/guide_poster_03_url.jpg', this.nextElementSibling.textContent)"><img src="assets/guide_poster_03_url.jpg" alt="Bước 3a: Dán URL website đã xuất bản vào ô URL → kiểm tra đúng địa chỉ → bấm Tạo mã." loading="lazy" class="w-full h-auto rounded-lg border border-slate-200"></button><figcaption class="mt-3 text-sm text-slate-700">Bước 3a: Dán URL website đã xuất bản vào ô URL → kiểm tra đúng địa chỉ → bấm Tạo mã.<br><b>Ảnh chụp giao diện web trên máy tính, ngày 06/11/2026.</b> Chạm ảnh để phóng to. URL trong ảnh là ví dụ; thay bằng đường dẫn sản phẩm của nhóm.</figcaption></figure><figure class="rwl-guide-figure my-4 p-4 bg-slate-50 border border-blue-200 rounded-xl"><button type="button" class="w-full cursor-zoom-in" aria-label="Phóng to: Bước 3b: Mã QR xuất hiện trên trang A4. Kéo về vùng cuối poster, giữ hình vuông và khoảng trắng quanh mã. Quét thử bằng thiết bị khác trước khi in." onclick="openLightbox('assets/guide_poster_04_qr_created.jpg', this.nextElementSibling.textContent)"><img src="assets/guide_poster_04_qr_created.jpg" alt="Bước 3b: Mã QR xuất hiện trên trang A4. Kéo về vùng cuối poster, giữ hình vuông và khoảng trắng quanh mã. Quét thử bằng thiết bị khác trước khi in." loading="lazy" class="w-full h-auto rounded-lg border border-slate-200"></button><figcaption class="mt-3 text-sm text-slate-700">Bước 3b: Mã QR xuất hiện trên trang A4. Kéo về vùng cuối poster, giữ hình vuông và khoảng trắng quanh mã. Quét thử bằng thiết bị khác trước khi in.<br><b>Ảnh chụp giao diện web trên máy tính, ngày 06/11/2026.</b> Chạm ảnh để phóng to. URL trong ảnh là ví dụ; thay bằng đường dẫn sản phẩm của nhóm.</figcaption></figure>            <!-- BƯỚC 4: XUẤT TỆP PDF IN ẤN CHẤT LƯỢNG CAO -->
             <div class="p-5 sm:p-6 bg-[#F8FAFC] border-l-4 border-emerald-500 rounded-r-2xl space-y-4">
                 <div class="flex items-center justify-between">
                     <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
@@ -240,12 +203,12 @@
                 </div>
                 <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
                     <p>• Chạm vào nút <b>Chia sẻ (Share)</b> ở góc trên bên phải giao diện Canva.</p>
-                    <p>• Chọn <b>Tải xuống (Download)</b> → Loại tệp chọn <b>PDF Bản in (PDF Print)</b> (đạt độ phân giải 300 DPI, in ra giấy A4 không bị mờ).</p>
+                    <p>• Chọn <b>Tải xuống (Download)</b> → Loại tệp chọn <b>PDF Bản in (PDF Print)</b> (kiểm tra ảnh nguồn đủ nét và chọn đúng khổ A4 khi in).</p>
                     <p>• Chạm <b>Tải xuống</b> và xác nhận lưu tệp vào ứng dụng <i>Tệp (Files)</i> trên iPad.</p>
                     <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 space-y-1.5 text-xs sm:text-sm text-emerald-950 mt-2">
                         <span class="font-bold text-emerald-800 uppercase block">Tóm Tắt Yêu Cầu Sản Phẩm Nộp:</span>
                         <p>• <b>Sản phẩm cần nộp:</b> 01 Tệp Poster A4 dọc hoàn chỉnh (bố cục 3 tầng, tiêu đề to rõ, thông điệp ngắn gọn và có Mã QR dẫn đến Website nhóm).</p>
-                        <p>• <b>Định dạng tệp chấp nhận:</b> Tệp in <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.pdf</code> (PDF Bản in chất lượng cao 300 DPI) hoặc tệp ảnh <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.png</code>.</p>
+                        <p>• <b>Định dạng tệp chấp nhận:</b> Tệp in <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.pdf</code> (PDF Bản in) hoặc tệp ảnh <code class="bg-white px-2 py-0.5 rounded font-bold text-emerald-700">.png</code>.</p>
                         <p>• <b>Quy cách đặt tên tệp:</b> <code class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">Lop_TenNhom_PosterA4.pdf</code> (Ví dụ: <code>9A1_Team02_PosterA4.pdf</code>).</p>
                     </div>
                 </div>
@@ -275,7 +238,7 @@
                 <i class="fa-solid fa-graduation-cap text-[#0267B1] text-base"></i>
                 <span>Tổ Tin học • Trường Quốc tế Á Châu (Asian School) — Năm học 2026–2027</span>
             </div>
-            <div>Học liệu số Real World Lab — Tối ưu hóa 100% cho iPad và công cụ Web Online</div>
+            <div>Học liệu số Real World Lab — Học liệu dùng trên iPad và máy tính; Google Sites biên tập trên máy tính</div>
         </div>
     </footer>
 

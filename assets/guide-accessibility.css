@@ -1,0 +1,20 @@
+/* Real World Lab: readable instructions on tablet and projector. */
+html { -webkit-text-size-adjust: 100%; }
+body { line-height: 1.65; }
+.text-xs, [class~="text-[10px]"], [class~="text-[11px]"] { font-size: 0.8125rem; line-height: 1.5; }
+code, kbd, pre { font-size: max(0.8125rem, 0.85em); overflow-wrap: anywhere; }
+body:not(.rwl-slide-deck) main p,
+body:not(.rwl-slide-deck) main li,
+body:not(.rwl-slide-deck) main td,
+body:not(.rwl-slide-deck) main th { font-size: 0.9375rem; line-height: 1.7; }
+body:not(.rwl-slide-deck) main h1,
+body:not(.rwl-slide-deck) main h2,
+body:not(.rwl-slide-deck) main h3,
+body:not(.rwl-slide-deck) main h4 { overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible { outline: 3px solid #0267B1; outline-offset: 3px; }
+@media (min-width: 1280px) {
+ body:not(.rwl-slide-deck) main p,
+ body:not(.rwl-slide-deck) main li,
+ body:not(.rwl-slide-deck) main td,
+ body:not(.rwl-slide-deck) main th { font-size: 1rem; }
+}

@@ -15,6 +15,7 @@
         code, kbd, pre { font-family: 'JetBrains Mono', monospace; }
         .touch-action-manipulation { touch-action: manipulation; }
     </style>
+    <link rel="stylesheet" href="assets/guide-accessibility.css">
 </head>
 <body class="w-full min-h-screen bg-[#F0F7FD] text-slate-800 antialiased flex flex-col m-0 p-0">
 
@@ -38,7 +39,7 @@
                 </a>
                 <div class="text-xs sm:text-sm bg-white/10 text-blue-100 px-4 py-2 rounded-xl border border-white/20 font-medium flex items-center gap-2">
                     <i class="fa-brands fa-apple text-sky-200"></i>
-                    <span>Tối Ưu 100% Cho iPad (Web Online)</span>
+                    <span>Hướng Dẫn Cho iPad & Máy Tính</span>
                 </div>
             </div>
         </div>
@@ -200,20 +201,16 @@
                     <p>• Đặt câu hỏi vòng 3 để tìm góc nhìn đối lập: <code class="bg-sky-50 text-sky-900 font-semibold px-2 py-0.5 rounded">"Nếu một bạn học sinh nói rằng không thể bỏ điện thoại vì phải học bài online, bạn sẽ tư vấn thế nào?"</code></p>
                 </div>
 
-                <!-- Khung Minh Họa Vòng Hội Thoại -->
-                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
-                            <i class="fa-solid fa-image text-sky-500"></i> Minh Họa Vòng Hội Thoại Multi-Turn Trên Safari iPad
-                        </span>
-                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
-                    </div>
-                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
-                        <i class="fa-solid fa-comments text-3xl mb-1 text-slate-400"></i>
-                        <span class="text-xs font-semibold text-slate-600">Đoạn chat hiển thị chuỗi câu hỏi phản biện vòng 2 và vòng 3</span>
-                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Cuộn màn hình iPad đến đoạn bạn yêu cầu AI viết lại kịch bản ngắn hơn</span>
-                    </div>
-                </div>
+                <aside class="p-4 bg-white border border-sky-200 rounded-xl space-y-3" aria-label="Ví dụ thực hành hội thoại nhiều lượt">
+                    <h5 class="font-bold text-[#0C3860]">Ví dụ thực hành — Hội thoại nhiều lượt</h5>
+                    <p class="text-sm text-slate-600">Đây là mẫu câu để thử, không phải ảnh chụp hay kết quả thực tế của AI.</p>
+                    <ol class="list-decimal list-inside space-y-2 text-slate-700">
+                        <li><b>Lượt 1:</b> “Hãy gợi ý dàn ý Podcast 2 phút về thói quen dùng điện thoại trước khi ngủ cho học sinh lớp 9. Tách lời khuyên và thông tin cần kiểm chứng.”</li>
+                        <li><b>Lượt 2:</b> “Chọn 2 nhận định có thể kiểm chứng. Nêu từ khóa tìm kiếm và nguồn gốc cần đọc; nếu không biết nguồn thì nói rõ.”</li>
+                        <li><b>Lượt 3:</b> “Rút dàn ý còn 3 ý chính. Không đưa số liệu chưa kiểm chứng vào kịch bản.”</li>
+                    </ol>
+                    <p class="text-sm text-slate-600"><b>Tự kiểm tra:</b> Nhóm đã sửa yêu cầu ít nhất một lần và chỉ ra điều gì tốt hơn sau lượt sửa?</p>
+                </aside>
             </div>
 
             <!-- BƯỚC 3: MỞ CHẾ ĐỘ SPLIT VIEW ĐỂ FACT-CHECK TRÊN GOOGLE -->
@@ -221,31 +218,28 @@
                 <div class="flex items-center justify-between">
                     <h4 class="text-base sm:text-lg font-bold text-[#0C3860] flex items-center gap-2">
                         <span class="w-7 h-7 bg-amber-500 text-white rounded-lg flex items-center justify-center text-xs font-black">3</span>
-                        Bật Split View Chia Đôi Màn Hình iPad Để Kiểm Chứng (Fact-Check)
+                        Mở Nguồn Gốc Để Kiểm Chứng (Fact-Check)
                     </h4>
-                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Đặc Quyền Của iPad</span>
+                    <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Hai tab hoặc hai cửa sổ</span>
                 </div>
                 <div class="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
-                    <p>• <b>Thao tác chia đôi màn hình trên iPad:</b> Chạm vào biểu tượng <b>3 dấu chấm (...)</b> ở cạnh trên cùng màn hình iPad → Chọn biểu tượng <b>Split View (Chia đôi)</b> → Chọn tiếp ứng dụng Safari mở tab Google Search.</p>
-                    <p>• <b>Đối soát số liệu:</b> Khi AI đưa ra thông tin (Ví dụ: <i>"Ánh sáng xanh từ điện thoại làm giảm 50% melatonin gây khó ngủ"</i>), copy cụm từ đó sang tab Google bên cạnh.</p>
-                    <p>• <b>Xác thực nguồn uy tín:</b> Chỉ chấp nhận dữ liệu nếu xuất hiện trên các trang uy tín: <code>who.int</code>, <code>moh.gov.vn</code> (Bộ Y tế), <code>vinmec.com</code>, các viện nghiên cứu khoa học.</p>
+                    <p>• <b>Thao tác chia đôi màn hình trên iPad:</b> Nếu iPad hỗ trợ Split View, mở AI và Safari ở hai cửa sổ cạnh nhau. Nếu không thấy tùy chọn này, dùng hai tab và chuyển qua lại. Trên máy tính, đặt hai cửa sổ trình duyệt cạnh nhau.</p>
+                    <p>• <b>Đối soát số liệu:</b> Chọn một nhận định AI đưa ra, tìm từ khóa liên quan trong tab tìm kiếm. Các số liệu AI nêu chỉ là thông tin cần kiểm chứng, không tự động là kết luận đúng.</p>
+                    <p>• <b>Xác thực nguồn uy tín:</b> Ưu tiên nguồn gốc như <code>who.int</code>, <code>moh.gov.vn</code> hoặc bài nghiên cứu gốc. Mở đọc trang đầy đủ, kiểm tra tác giả, ngày cập nhật và nội dung có thực sự hỗ trợ nhận định hay không; không chỉ dựa vào đoạn trích trên Google.</p>
                     <p>• Ghi lại đường link nguồn kiểm chứng vào Phiếu học tập số 3.</p>
                 </div>
 
-                <!-- Khung Minh Họa Split View -->
-                <div class="p-3 bg-white border border-dashed border-slate-300 rounded-xl">
-                    <div class="flex items-center justify-between mb-1.5">
-                        <span class="text-xs font-bold text-slate-700 uppercase flex items-center gap-1.5">
-                            <i class="fa-solid fa-image text-amber-500"></i> Minh Họa Bước 3: Màn Hình iPad Split View (ChatGPT + Google Search)
-                        </span>
-                        <span class="text-[11px] text-slate-400 font-medium">Chụp trên iPad</span>
-                    </div>
-                    <div class="w-full h-36 bg-slate-100 rounded-lg flex flex-col items-center justify-center text-center p-3 text-slate-400">
-                        <i class="fa-solid fa-table-columns text-3xl mb-1 text-slate-400"></i>
-                        <span class="text-xs font-semibold text-slate-600">Màn hình chia đôi: Nửa trái là ChatGPT, nửa phải là Google Tìm Kiếm nguồn y tế</span>
-                        <span class="text-[11px] text-slate-400 mt-0.5">Vị trí chụp: Màn hình iPad đang bật chế độ Split View 50/50</span>
-                    </div>
-                </div>
+                <aside class="p-4 bg-white border border-amber-200 rounded-xl space-y-3" aria-label="Bảng ghi kết quả kiểm chứng">
+                    <h5 class="font-bold text-[#0C3860]">Ghi kết quả vào Phiếu học tập số 3</h5>
+                    <p class="text-sm text-slate-600">Với mỗi nhận định, ghi đủ 4 mục sau. Đây là mẫu ghi chép, không phải ảnh chụp màn hình.</p>
+                    <ol class="list-decimal list-inside space-y-2 text-slate-700">
+                        <li><b>Nhận định của AI:</b> Chép nguyên câu cần kiểm chứng.</li>
+                        <li><b>Nguồn đã đọc:</b> Ghi tên trang, tác giả hoặc tổ chức, ngày và URL cụ thể.</li>
+                        <li><b>Bằng chứng:</b> Tóm tắt ý liên quan, nêu điều kiện hoặc giới hạn mà nguồn đề cập.</li>
+                        <li><b>Kết luận của nhóm:</b> Được hỗ trợ / Cần sửa / Chưa đủ bằng chứng. Viết lại câu đưa vào sản phẩm.</li>
+                    </ol>
+                    <p class="text-sm text-slate-600"><b>Trước khi chụp:</b> Chỉ giữ phần hội thoại và nguồn liên quan; che tên tài khoản, email và thông tin cá nhân.</p>
+                </aside>
             </div>
 
             <!-- BƯỚC 4: CHỤP ẢNH MINH CHỨNG & NỘP PHIẾU HỌC TẬP -->
@@ -281,7 +275,7 @@
                 <i class="fa-solid fa-house"></i> Về Cổng Lộ Trình
             </a>
             <a href="buoi_04_website.html" class="w-full sm:w-auto px-6 py-3 bg-white border border-slate-300 hover:border-[#0267B1] text-slate-700 hover:text-[#0267B1] rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
-                Buổi 4: Tạo Website Dự Án Trên iPad <i class="fa-solid fa-arrow-right"></i>
+                Buổi 4: Tạo Website Dự Án Trên Máy Tính <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
 
@@ -294,7 +288,7 @@
                 <i class="fa-solid fa-graduation-cap text-[#0267B1] text-base"></i>
                 <span>Tổ Tin học • Trường Quốc tế Á Châu (Asian School) — Năm học 2026–2027</span>
             </div>
-            <div>Học liệu số Real World Lab — Tối ưu hóa 100% cho iPad và công cụ Web Online</div>
+            <div>Học liệu số Real World Lab — Xem trên iPad hoặc máy tính • Biên tập Google Sites trên máy tính</div>
         </div>
     </footer>
 
