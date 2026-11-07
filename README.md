@@ -33,3 +33,11 @@ Cổng thông tin học liệu số và cẩm nang thực hành trực tuyến d
 - Đăng nhập Canva bằng tài khoản được giáo viên cho phép. Ưu tiên tài nguyên miễn phí hoặc tài nguyên trường đã cấp phép.
 - Podcast chấp nhận MP3 hoặc MP4 có âm thanh (2–3 phút); không đổi đuôi tệp để chuyển định dạng.
 - Nộp liên kết để giáo viên có quyền xem. Chỉ công khai sản phẩm đã được giáo viên duyệt, sau khi rà soát dữ liệu cá nhân và quyền sử dụng hình ảnh, âm nhạc.
+
+
+## Hướng dẫn thực hành chi tiết (07/11/2026)
+- 7 buổi, 42 bước; mỗi bước có thao tác, kết quả cần thấy và cách xử lý lỗi.
+- 7 mẫu điền và 7 bài mẫu minh họa trong `templates/`. Mẫu lưu HTML đã điền và gọi chức năng in/lưu PDF của trình duyệt; không tự nộp LMS và không tự lưu khi đóng tab.
+- Dùng các ảnh công cụ đã có, ghi rõ ảnh chụp mới trên máy tính và ảnh tham khảo cũ. Không có ảnh chụp mới trong đợt này.
+- Bài mẫu ghi rõ tệp, URL, nguồn hoặc kết quả chưa có; học sinh phải bổ sung sản phẩm và bằng chứng thực tế.
+- Đã kiểm tra hành vi DOM bằng jsdom; chưa kiểm thử trực quan hoặc Safari iPad trong đợt này.
