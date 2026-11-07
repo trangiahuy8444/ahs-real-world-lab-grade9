@@ -38,6 +38,6 @@ Cổng thông tin học liệu số và cẩm nang thực hành trực tuyến d
 ## Hướng dẫn thực hành chi tiết (07/11/2026)
 - 7 buổi, 42 bước; mỗi bước có thao tác, kết quả cần thấy và cách xử lý lỗi.
 - 7 mẫu điền và 7 bài mẫu minh họa trong `templates/`. Mẫu lưu HTML đã điền và gọi chức năng in/lưu PDF của trình duyệt; không tự nộp LMS và không tự lưu khi đóng tab.
-- Dùng các ảnh công cụ đã có, ghi rõ ảnh chụp mới trên máy tính và ảnh tham khảo cũ. Không có ảnh chụp mới trong đợt này.
+- Dùng các ảnh công cụ đã có và bổ sung 4 ảnh thật của mẫu thực hành, chụp bằng WebKit mô phỏng khổ iPad ngày 07/11/2026; xem `assets/SCREENSHOTS.md`.
 - Bài mẫu ghi rõ tệp, URL, nguồn hoặc kết quả chưa có; học sinh phải bổ sung sản phẩm và bằng chứng thực tế.
-- Đã kiểm tra hành vi DOM bằng jsdom; chưa kiểm thử trực quan hoặc Safari iPad trong đợt này.
+- Đã kiểm tra DOM và trực quan trên Chromium/WebKit ở 5 cấu hình màn hình. Chưa thử trên iPad vật lý; xem `VISUAL_QA.md`.
